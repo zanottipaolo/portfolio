@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" data-theme="light">
+<html class="scroll-smooth" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,20 +23,48 @@
 <body>
 
     <!-- Navbar -->
-    
+    <div class="navbar bg-transparent py-6" id="navbar">
+        <!-- Logo Navbar -->
+        <div class="navbar-start">          
+          <a class="btn btn-ghost normal-case text-xl" href="#">Paolo Zanotti</a>
+        </div>
+        <!-- Menu Navbar -->
+        <div class="navbar-end" style="width: 55%;">
+            <div class="hidden sm:flex">
+                <ul>
+                    <!-- Desktop Menu -->
+                    <li class="float-left ml-6 list-none"><a href="#about-me">About me</a></li>
+                    <li class="float-left ml-6 list-none"><a href="#skills">Skills</a></li>
+                    <li class="float-left ml-6 list-none"><a href="#projects">Projects</a></li>
+                    <li class="float-left ml-6 list-none"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="dropdown md:hidden">
+                <!-- Hamburger Icon -->
+                <label tabindex="0" class="btn btn-ghost sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <!-- Mobile Menu -->
+                <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 right-0">
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero -->
     <div class="hero min-h-screen" id="hero">
-        <div class="hero-overlay bg-opacity-80">
+        <div class="hero-overlay bg-opacity-90">
         </div>
-
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md">
             <div class="mb-5">
-                <span class="span-title">Hi, my name is</span>
+                <span class="span-title tracking-widest">Hi, my name is</span>
                 <h1 class="text-5xl font-bold"> Paolo Zanotti</h1>
             </div>
-
             <div id="typed-strings">
                 <p>Software Engineer</p>
                 <p>Student</p>
@@ -44,26 +72,42 @@
             <div>
                 <span class="mb-5" id="typed"></span>
             </div>
-
-            <button class="mt-10 btn btn-success">Tell me more</button>
+            <a href="#about-me" class="mt-10 btn btn-success">Tell me more</a>
           </div>
         </div>
     </div>
 
     <!-- About Me -->
+    <div id="about-me" class="min-h-screen">
+        <h2>About me</h2>
+    </div>
+
+    <hr>
 
     <!-- Skills -->
+    <div id="skills" class="min-h-screen">
+        <h2>Skills</h2>
+    </div>
+
+    <hr>
 
     <!-- Projects -->
+    <div id="projects" class="min-h-screen">
+        <h2>Projects</h2>
+    </div>
+
+    <hr>
 
     <!-- Contact -->
+    <div id="contact" class="min-h-screen">
+        <h2>Contact</h2>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer footer-center p-10 bg-success text-primary-content">
+    <footer class="footer footer-center p-10 bg-success text-primary-content" id="footer">
         <div>
           <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="inline-block fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
           <p class="font-bold">Paolo Zanotti <br> <span id="year"></span></p>
-          
           <p>This website is completely Open Source 🎉 <br> Take a look on <a href="https://github.com/zanottipaolo/Portfolio" target="_blank" rel="noopener noreferrer" class="underline">Github</a></p>
           <p>Made with Tailwind, DaisyUI and 🍕</p>
         </div> 

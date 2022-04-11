@@ -3,6 +3,13 @@
     background-size: cover;
 }
 
-.span-title{
-    letter-spacing: 4px;
+#navbar{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+    transition-property: padding-top, padding-bottom;
+    transition-duration: 0.3s, 0.3s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
 }
