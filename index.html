@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" data-theme="dark">
+<html class="scroll-smooth" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- CDN Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,13 +26,16 @@
     
 
     <!-- Hero -->
-    <div class="hero min-h-screen" style="background-image: url(https://api.lorem.space/image/fashion?w=1000&h=800);">
-        <div class="hero-overlay bg-opacity-60">
+    <div class="hero min-h-screen" id="hero">
+        <div class="hero-overlay bg-opacity-80">
         </div>
 
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">Hi! 👋 <br> I'm Paolo Zanotti</h1>
+            <div class="mb-5">
+                <span class="span-title">Hi, my name is</span>
+                <h1 class="text-5xl font-bold"> Paolo Zanotti</h1>
+            </div>
 
             <div id="typed-strings">
                 <p>Software Engineer</p>
@@ -64,7 +70,7 @@
     </footer>
 
     <!-- Script files -->
-    <script src="assets/script.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <!-- Made with ❤️ by Paolo Zanotti -->
     
