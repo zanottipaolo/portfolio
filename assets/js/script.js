@@ -8,6 +8,7 @@ let typed = new Typed('#typed', {
     backSpeed: 70,
     backDelay: 2000,
     loop: true,
+    loopCount: Infinity,
     smartBackspace: true,
 });
 
@@ -29,4 +30,4 @@ window.onscroll = function (e) {
         div.classList.add("py-4");
         div.classList.remove("py-6");
     }
-} 
+}
