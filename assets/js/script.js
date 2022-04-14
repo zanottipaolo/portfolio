@@ -15,10 +15,13 @@ let typed = new Typed('#typed', {
 // Change Navbar style when scrolling
 window.onscroll = function (e) {
     let div = document.getElementById('navbar');
+    let link = document.getElementById('menu-desktop');
 
     if(window.scrollY==0){
         div.classList.remove("bg-base-100");
         div.classList.add("bg-transparent");
+
+        link.classList.add("text-neutral-content");
 
         div.classList.add("py-6");
         div.classList.remove("py-4");
@@ -26,6 +29,8 @@ window.onscroll = function (e) {
     else{
         div.classList.add("bg-base-100");
         div.classList.remove("bg-transparent");
+
+        link.classList.remove("text-neutral-content");
 
         div.classList.add("py-4");
         div.classList.remove("py-6");
