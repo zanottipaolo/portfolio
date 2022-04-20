@@ -13,26 +13,31 @@ let typed = new Typed('#typed', {
 });
 
 // Change Navbar style when scrolling
-window.onscroll = function (e) {
-    let div = document.getElementById('navbar');
-    let link = document.getElementById('menu-desktop');
+// window.onscroll = function (e) {
+//     let div = document.getElementById('navbar');
 
-    if(window.scrollY==0){
-        div.classList.remove("bg-base-100");
-        div.classList.add("bg-transparent");
+//     if(window.scrollY==0){
+//         div.classList.remove("bg-base-100");
+//         div.classList.add("bg-transparent");
 
-        link.classList.add("text-neutral-content");
+//         div.classList.add("py-6");
+//         div.classList.remove("py-4");
+//     }
+//     else{
+//         div.classList.add("bg-base-100");
+//         div.classList.remove("bg-transparent");
 
-        div.classList.add("py-6");
-        div.classList.remove("py-4");
-    }
-    else{
-        div.classList.add("bg-base-100");
-        div.classList.remove("bg-transparent");
+//         div.classList.add("py-4");
+//         div.classList.remove("py-6");
+//     }
+// }
 
-        link.classList.remove("text-neutral-content");
+function handleMenu(){
+    let menu = document.getElementById('menu');
+    let hmbttn = document.getElementById('hamburger-button');
+    menu.classList.toggle("group-hover:block");
 
-        div.classList.add("py-4");
-        div.classList.remove("py-6");
+    if(!menu.classList.contains("group-hover:block")){
+        hmbttn.blur();
     }
 }
