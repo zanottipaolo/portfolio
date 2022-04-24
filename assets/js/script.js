@@ -12,8 +12,8 @@ let typed = new Typed('#typed', {
     smartBackspace: true,
 });
 
-// Get the button
-let mybutton = document.getElementById("btn-top");
+// Back to top button
+let btn = document.getElementById("btn-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
@@ -21,19 +21,16 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+        btn.style.display = "block";
+    else 
+        btn.style.display = "none";
 }
+
 // When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+btn.addEventListener("click", backToTop);
 
 function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
