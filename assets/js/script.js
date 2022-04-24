@@ -12,32 +12,28 @@ let typed = new Typed('#typed', {
     smartBackspace: true,
 });
 
-// Change Navbar style when scrolling
-// window.onscroll = function (e) {
-//     let div = document.getElementById('navbar');
+// Get the button
+let mybutton = document.getElementById("btn-top");
 
-//     if(window.scrollY==0){
-//         div.classList.remove("bg-base-100");
-//         div.classList.add("bg-transparent");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
 
-//         div.classList.add("py-6");
-//         div.classList.remove("py-4");
-//     }
-//     else{
-//         div.classList.add("bg-base-100");
-//         div.classList.remove("bg-transparent");
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
 
-//         div.classList.add("py-4");
-//         div.classList.remove("py-6");
-//     }
-// }
-
-function handleMenu(){
-    let menu = document.getElementById('menu');
-    let hmbttn = document.getElementById('hamburger-button');
-    menu.classList.toggle("group-hover:block");
-
-    if(!menu.classList.contains("group-hover:block")){
-        hmbttn.blur();
-    }
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
