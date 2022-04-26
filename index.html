@@ -1,209 +1,192 @@
 <!DOCTYPE html>
 <html class="scroll-smooth" data-theme="dracula">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Style -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <!-- Style -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
 
-    <!-- CDN Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- CDN Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- CDN DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- CDN DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.6/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- CDN Typed.JS -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- CDN Typed.JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <title>Paolo Zanotti</title>
+  <title>Paolo Zanotti</title>
 </head>
 <body>
+  
+  <!-- Navbar -->
+  
 
-    <!-- Hero -->
-    <div class="hero min-h-screen" id="hero">
-        <div class="hero-overlay bg-opacity-90">
+  <!-- Hero -->
+  <div class="hero min-h-screen" id="hero">
+      <div class="hero-overlay bg-opacity-90">
+      </div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <div class="mb-5">
+              <span class="span-title tracking-widest text-xl">Hi, my name is</span>
+              <h1 class="text-5xl font-bold md:text-7xl"> Paolo Zanotti</h1>
+          </div>
+          <div id="typed-strings">
+              <p>I'm a <span class="text-primary">Software Engineer</span></p>
+              <p>I'm a <span class="text-primary">Student</span></p>
+          </div>
+          <div>
+              <span class="mb-5 text-3xl" id="typed"></span>
+          </div>
+          <a href="#about-me" class="mt-10 btn btn-primary">Tell me more</a>
         </div>
-        <div class="hero-content text-center text-neutral-content">
-          <div class="max-w-md">
-            <div class="mb-5">
-                <span class="span-title tracking-widest text-xl">Hi, my name is</span>
-                <h1 class="text-5xl font-bold md:text-7xl"> Paolo Zanotti</h1>
-            </div>
-            <div id="typed-strings">
-                <p>I'm a <span class="text-primary">Software Engineer</span></p>
-                <p>I'm a <span class="text-primary">Student</span></p>
-            </div>
-            <div>
-                <span class="mb-5 text-3xl" id="typed"></span>
-            </div>
-            <a href="#about-me" class="mt-10 btn btn-primary">Tell me more</a>
+      </div>
+  </div>
+
+  <!-- About Me -->
+  <div id="about-me" class="min-h-screen">
+    <section class="body-font">
+      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium">About Me</h2>
+          <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+          <div class="flex justify-center">
+              <button class="inline-flex bg-primary border-0 py-2 px-6 focus:outline-none rounded text-lg text-primary-content">DOWNLOAD CV</button>
           </div>
         </div>
-    </div>
-
-    <!-- About Me -->
-    <div id="about-me" class="min-h-screen">
-        <section class="body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium">About Me</h2>
-            <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-            <div class="flex justify-center">
-                <button class="inline-flex bg-primary border-0 py-2 px-6 focus:outline-none rounded text-lg text-primary-content">DOWNLOAD CV</button>
-            </div>
-            </div>
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
-            </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
         </div>
-        </section>
+      </div>
+    </section>
 
-        <!-- Resume -->
-        <div class="flex flex-col md:flex-row">
-          <!-- Resume Education-->
-        <section class="body-font md:w-1/2">
-          <div class="container px-5 pt-5 pb-5 mx-auto flex flex-wrap">
-            <h3 class="title-font sm:text-3xl text-2xl mb-4 font-medium pt-10 pb-10 md:mx-auto">Education</h3>
-
-            <div class="flex relative pt-10 pb-20 items-start mx-auto">
-              <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10 title-font font-medium text-sm"></div>
-              <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                  <h4 class="font-medium title-font mb-1 text-xl">Computer Engineering - University of Bergamo</h4>
-                  <p>2020 - Present</p>
-                  <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex relative pb-20 items-start mx-auto">
-              <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10 title-font font-medium text-sm"></div>
-              <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                  <h4 class="font-medium title-font mb-1 text-xl">ITIS P. Paleocapa</h4>
-                  <p>2015 - 2020</p>
-                  <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-                </div>
-              </div>
-            </div>
+    <div class="m-5 md:m-10">
+      <h3 class="title-font sm:text-3xl text-2xl mb-4 font-medium pt-10 pb-10 md:mx-auto">Education</h3>
+      <ol class="border-l-2 border-blue-600 m-5 md:m-10">
+        <li>
+          <div class="flex flex-start items-center">
+            <div class="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+            <h4 class="font-semibold text-xl -mt-2">Title of section 1</h4>
           </div>
-      </section>
-
-      <!-- Resume Work -->
-      <section class="body-font md:w-1/2">
-          <div class="container px-5 pt-5 pb-24 mx-auto flex flex-wrap flex-col">
-            <h3 class="title-font sm:text-3xl text-2xl mb-4 font-medium pt-10 pb-10 md:mx-auto">Work</h3>
-
-            <div class="flex relative pt-10 pb-20 items-start mx-auto">
-              <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10 title-font font-medium text-sm"></div>
-              <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                  <h4 class="font-medium title-font mb-1 text-xl">Web Developer - BePrime</h4>
-                  <p>2020 - Present</p>
-                  <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex relative pb-20 items-start mx-auto">
-              <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
-              </div>
-              <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-primary text-white relative z-10 title-font font-medium text-sm"></div>
-              <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                  <h4 class="font-medium title-font mb-1 text-xl">PCTO</h4>
-                  <p class="leading-relaxed">VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk bespoke try-hard cliche palo santo offal.</p>
-                </div>
-              </div>
-            </div>
+          <div class="ml-6 mb-6 pb-6">
+            <p class="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</p>
+            <p class="mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button type="button" class="inline-block px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Read more</button>
           </div>
-      </section>
-        </div>
-        
+        </li>
+        <li>
+          <div class="flex flex-start items-center">
+            <div class="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+            <h4 class="font-semibold text-xl -mt-2">Title of section 2</h4>
+          </div>
+          <div class="ml-6 mb-6 pb-6">
+            <p class="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</p>
+            <p class="mt-2 mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <button type="button" class="inline-block px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Read more</button>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-start items-center">
+            <div class="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+            <h4 class="font-semibold text-xl -mt-2">Title of section 3</h4>
+          </div>
+          <div class="ml-6 mb-6 pb-6">
+            <p class="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</p>
+            <p class="mt-2 mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+            <button type="button" class="inline-block px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Read more</button>
+          </div>
+        </li>
+      </ol>
     </div>
 
-    <hr>
-
-    <!-- Skills -->
-    <div id="skills" class="min-h-screen">
-        <h2>Skills</h2>
+    <div class="m-5 md:m-10">
+      <h3 class="title-font sm:text-3xl text-2xl mb-4 font-medium pt-10 pb-10 md:mx-auto">Work</h3>
+      <ol class="border-l-2 border-blue-600 m-5 md:m-10">
+        <li>
+          <div class="flex flex-start items-center">
+            <div class="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+            <h4 class="font-semibold text-xl -mt-2">Title of section 1</h4>
+          </div>
+          <div class="ml-6 mb-6 pb-6">
+            <p class="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</p>
+            <p class="mt-2 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <button type="button" class="inline-block px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Read more</button>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-start items-center">
+            <div class="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+            <h4 class="font-semibold text-xl -mt-2">Title of section 2</h4>
+          </div>
+          <div class="ml-6 mb-6 pb-6">
+            <p class="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</p>
+            <p class="mt-2 mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            <button type="button" class="inline-block px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Read more</button>
+          </div>
+        </li>
+        <li>
+          <div class="flex flex-start items-center">
+            <div class="bg-blue-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
+            <h4 class="font-semibold text-xl -mt-2">Title of section 3</h4>
+          </div>
+          <div class="ml-6 mb-6 pb-6">
+            <p class="text-blue-600 hover:text-blue-700 focus:text-blue-800 duration-300 transition ease-in-out text-sm">4 February, 2022</p>
+            <p class="mt-2 mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
+            <button type="button" class="inline-block px-4 py-1.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Read more</button>
+          </div>
+        </li>
+      </ol>
     </div>
 
-    <hr>
+  </div>
 
-    <!-- Projects -->
-    <div id="projects" class="min-h-screen">
-        <h2>Projects</h2>
-    </div>
+  <hr>
 
-    <hr>
+  <!-- Skills -->
+  <div id="skills" class="min-h-screen">
+      <h2>Skills</h2>
+  </div>
 
-    <!-- Contact -->
-    <div id="contact" class="min-h-screen">
-        <h2 class="title-font sm:text-4xl text-3xl mb-4 font-medium">Get in touch</h2>
-        <div class="flex justify-center space-x-2">
+  <hr>
 
-          <!-- Github -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-7 h-7" style="color: #333;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-        
-          <!-- Mail -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" class="w-7 h-7" style="color: #ea4335;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
-        
-          <!-- Linkedin -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7" style="color: #0077b5;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
-        
-          <!-- Stack overflow -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-7 h-7" style="color: #f48024;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
-        
-          <!-- Telegram -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-7 h-7" style="color: #0088cc;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg>
-        
-          <!-- Slack -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-7 h-7" style="color: #3eb991;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"/></svg>
-        
-          <!-- Reddit -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-7 h-7" style="color: #ff4500;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"/></svg>
-        
-          <!-- Twitter -->
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-7 h-7" style="color: #1da1f2;"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-        </div>
-    </div>
+  <!-- Projects -->
+  <div id="projects" class="min-h-screen">
+      <h2>Projects</h2>
+  </div>
 
-    <!-- Back to top button -->
-    <button class="btn-primary inline-block p-3 font-medium text-xs leading-tight uppercase rounded-full transition duration-300 ease-in-out bottom-5 right-5" id="btn-top">
-      <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
-    </button>
+  <hr>
 
-    <!-- Footer -->
-    <footer class="footer footer-center p-10 bg-primary text-primary-content" id="footer">
-        <div>
-          <a href="#"><svg width="50" height="50" class="inline-block fill-current" viewBox="0 0 59.541351 43.289425" version="1.1" id="svg49061" sodipodi:docname="code_normal.svg" inkscape:version="1.1.2 (b8e25be8, 2022-02-05)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"> <sodipodi:namedview id="namedview24" pagecolor="#ffffff" bordercolor="#999999" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:document-units="mm" showgrid="false" inkscape:zoom="0.67645" inkscape:cx="164.8311" inkscape:cy="176.65755" inkscape:window-width="1440" inkscape:window-height="847" inkscape:window-x="0" inkscape:window-y="25" inkscape:window-maximized="0" inkscape:current-layer="svg49061" /> <title id="title49381">Code</title> <defs id="defs49058"> <rect x="131.11031" y="79.025383" width="380.75867" height="438.23169" id="rect36746" /> <rect x="131.11031" y="79.025383" width="380.75867" height="438.23169" id="rect36746-1" /> </defs> <text xml:space="preserve" transform="matrix(0.24452701,0,0,0.24981524,-33.906624,-54.492533)" id="text36744" style="font-style:normal;font-weight:normal;font-size:192px;line-height:2.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect36746);fill-opacity:1;stroke:none"><tspan x="131.10938" y="350.19281" id="tspan2723"><tspan style="font-family:Chalkboard;-inkscape-font-specification:Chalkboard" id="tspan2721">&lt;</tspan></tspan></text> <text xml:space="preserve" transform="matrix(0.24452701,0,0,0.24981524,6.4287158,-54.548966)" id="text36744-3" style="font-style:normal;font-weight:normal;font-size:192px;line-height:2.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect36746-1);fill-opacity:1;stroke:none"><tspan x="131.10938" y="350.19281" id="tspan2727"><tspan style="font-family:Chalkboard;-inkscape-font-specification:Chalkboard" id="tspan2725">&gt;</tspan></tspan></text> <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:51.5px;line-height:1.25;font-family:sans-serif;fill-opacity:1;stroke:none;stroke-width:0.268229" x="19.800848" y="35.469246" id="text46466" transform="matrix(0.89524121,0.06823034,-0.08464125,1.1105665,0,0)"><tspan id="tspan46464" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.5px;font-family:Chalkboard;-inkscape-font-specification:Chalkboard;stroke-width:0.268229" x="19.800848" y="35.469246">/</tspan></text> <metadata id="metadata49379"> <rdf:RDF> <cc:Work rdf:about=""> <dc:title>Code</dc:title> <dc:date>24/04/2022</dc:date> <dc:creator> <cc:Agent> <dc:title>Paolo Zanotti</dc:title> </cc:Agent> </dc:creator> <dc:description>Code tag</dc:description> <cc:license rdf:resource="http://artlibre.org/licence/lal" /> </cc:Work> <cc:License rdf:about="http://artlibre.org/licence/lal"> <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" /> <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" /> <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /> <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike" /> <cc:requires rdf:resource="http://creativecommons.org/ns#Notice" /> <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution" /> </cc:License> </rdf:RDF> </metadata> </svg>
-          <p class="font-bold">Paolo Zanotti <br> <span id="year"></span></p>
-          <p>This website is completely Open Source 🎉 <br> Take a look on <a href="https://github.com/zanottipaolo/Portfolio" target="_blank" rel="noopener noreferrer" class="link">Github</a></p>
-          <p>Made with Tailwind, DaisyUI and 🍕</p>
-        </div> 
-    </footer>
+  <!-- Contact -->
+  <div id="contact" class="min-h-screen">
+      <h2>Get in touch</h2>
+  </div>
 
-    <!-- Script files -->
-    <script src="assets/js/script.js"></script>
+  <!-- Back to top button -->
+  <button class="btn-primary inline-block p-3 font-medium text-xs leading-tight uppercase rounded-full transition duration-300 ease-in-out bottom-5 right-5" id="btn-top">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" class="w-4 h-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+  </button>
 
-    <!-- Made with ❤️ by Paolo Zanotti -->
-    
+  <!-- Footer -->
+  <footer class="footer footer-center p-10 bg-primary text-primary-content" id="footer">
+      <div>
+        <a href="#"><svg width="50" height="50" class="inline-block fill-current" viewBox="0 0 59.541351 43.289425" version="1.1" id="svg49061" sodipodi:docname="code_normal.svg" inkscape:version="1.1.2 (b8e25be8, 2022-02-05)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"> <sodipodi:namedview id="namedview24" pagecolor="#ffffff" bordercolor="#999999" borderopacity="1" inkscape:pageshadow="0" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:document-units="mm" showgrid="false" inkscape:zoom="0.67645" inkscape:cx="164.8311" inkscape:cy="176.65755" inkscape:window-width="1440" inkscape:window-height="847" inkscape:window-x="0" inkscape:window-y="25" inkscape:window-maximized="0" inkscape:current-layer="svg49061" /> <title id="title49381">Code</title> <defs id="defs49058"> <rect x="131.11031" y="79.025383" width="380.75867" height="438.23169" id="rect36746" /> <rect x="131.11031" y="79.025383" width="380.75867" height="438.23169" id="rect36746-1" /> </defs> <text xml:space="preserve" transform="matrix(0.24452701,0,0,0.24981524,-33.906624,-54.492533)" id="text36744" style="font-style:normal;font-weight:normal;font-size:192px;line-height:2.25;font-family:sans-serif;white-space:pre;fill-opacity:1;stroke:none"><tspan x="131.10938" y="350.19281" id="tspan2723"><tspan style="font-family:Chalkboard;-inkscape-font-specification:Chalkboard" id="tspan2721">&lt;</tspan></tspan></text> <text xml:space="preserve" transform="matrix(0.24452701,0,0,0.24981524,6.4287158,-54.548966)" id="text36744-3" style="font-style:normal;font-weight:normal;font-size:192px;line-height:2.25;font-family:sans-serif;white-space:pre;fill-opacity:1;stroke:none"><tspan x="131.10938" y="350.19281" id="tspan2727"><tspan style="font-family:Chalkboard;-inkscape-font-specification:Chalkboard" id="tspan2725">&gt;</tspan></tspan></text> <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:51.5px;line-height:1.25;font-family:sans-serif;fill-opacity:1;stroke:none;stroke-width:0.268229" x="19.800848" y="35.469246" id="text46466" transform="matrix(0.89524121,0.06823034,-0.08464125,1.1105665,0,0)"><tspan id="tspan46464" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.5px;font-family:Chalkboard;-inkscape-font-specification:Chalkboard;stroke-width:0.268229" x="19.800848" y="35.469246">/</tspan></text> <metadata id="metadata49379"> <rdf:RDF> <cc:Work rdf:about=""> <dc:title>Code</dc:title> <dc:date>24/04/2022</dc:date> <dc:creator> <cc:Agent> <dc:title>Paolo Zanotti</dc:title> </cc:Agent> </dc:creator> <dc:description>Code tag</dc:description> <cc:license rdf:resource="http://artlibre.org/licence/lal" /> </cc:Work> <cc:License rdf:about="http://artlibre.org/licence/lal"> <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction" /> <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution" /> <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks" /> <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike" /> <cc:requires rdf:resource="http://creativecommons.org/ns#Notice" /> <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution" /> </cc:License> </rdf:RDF> </metadata> </svg>
+        <p class="font-bold">Paolo Zanotti <br> <span id="year"></span></p>
+        <p>This website is completely Open Source 🎉 <br> Take a look on <a href="https://github.com/zanottipaolo/Portfolio" target="_blank" rel="noopener noreferrer" class="link">Github</a></p>
+        <p>Made with Tailwind, DaisyUI and 🍕</p>
+      </div> 
+  </footer>
+
+  <!-- Script files -->
+  <script src="assets/js/script.js"></script>
+
+  <!-- Made with ❤️ by Paolo Zanotti -->
+  
 </body>
 </html>
