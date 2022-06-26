@@ -12,3 +12,20 @@
     display: none;
     position: fixed;
 }
+
+.link-navbar{
+    display: flex;
+}
+
+.link-navbar > ul {
+    display: flex;
+    align-items: center;
+}
+
+.link-navbar > ul > li{
+    float: left;
+}
+
+.link-navbar > ul > li{
+    margin-right: 3.5rem;
+}
