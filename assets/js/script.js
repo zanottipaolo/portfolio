@@ -12,6 +12,20 @@ let typed = new Typed('#typed', {
     smartBackspace: true,
 });
 
+// Show/Hide Mobile menu
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("hidden");
+}
+
+function clickOnCheckbox(){
+    document.getElementById("checkMenu").click();
+}
+
+
+/* */
+/* Back to top */
+/* */
+
 // Back to top button
 let btn = document.getElementById("btn-top");
 
