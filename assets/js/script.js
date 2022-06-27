@@ -15,6 +15,7 @@ let typed = new Typed('#typed', {
 // Show/Hide Mobile menu
 function toggleMenu(){
     document.getElementById("menu").classList.toggle("hidden");
+    document.getElementById("bar-menu").classList.toggle("hidden");
 }
 
 function clickOnCheckbox(){
