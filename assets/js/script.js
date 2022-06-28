@@ -26,9 +26,10 @@ function clickOnCheckbox(){
 function filterProjects(data){
     let allProjects = document.getElementsByClassName("pro-all")
 
-    // Add Hidden class
+    // // Clean hidden elements at start && Add Hidden class on condition
     for(let i=0; i<allProjects.length; i++){
         allProjects[i].classList.remove("hidden")
+        
         if(!allProjects[i].classList.contains(data))    
             allProjects[i].classList.toggle("hidden")
     }
