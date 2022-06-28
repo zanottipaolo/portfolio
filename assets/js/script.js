@@ -22,6 +22,18 @@ function clickOnCheckbox(){
     document.getElementById("checkMenu").click();
 }
 
+// Filter projects
+function filterProjects(data){
+    let allProjects = document.getElementsByClassName("pro-all")
+
+    // Add Hidden class
+    for(let i=0; i<allProjects.length; i++){
+        allProjects[i].classList.remove("hidden")
+        if(!allProjects[i].classList.contains(data))    
+            allProjects[i].classList.toggle("hidden")
+    }
+}
+
 
 /* */
 /* Back to top */
