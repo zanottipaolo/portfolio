@@ -315,7 +315,7 @@
       <label class="label">
         <span class="label-text">Filter projects</span>
       </label>
-      <select class="select select-primary select-bordered" onchange="filterProjects(this.value)">
+      <select class="select select-primary select-bordered focus:outline-none" onchange="filterProjects(this.value)">
         <option selected value="pro-all">All</option>
         <option value="pro-website">Website</option>
         <option value="pro-test">Test</option>
@@ -323,119 +323,121 @@
     </div>
 
     <!-- Cards -->
-    <div class="text-center mt-10 p-12">
+    <div class="text-center mt-10 p-12 grid place-items-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      
       <!-- Project 1 -->
-      <label class="swap swap-rotate pro-website pro-all">
+      <label class="swap pro-website pro-all">
         <!-- this hidden checkbox controls the state -->
         <input type="checkbox" />
         
-        <div class="swap-on">
-
-          <div class="card card-compact w-full sm:w-3/4 bg-base-100 shadow-xl m-auto">
+        <div class="swap-on z-40">
+          <div class="card card-compact border-2 border-primary w-full sm:w-3/4 bg-base-100 shadow-xl m-auto max-w-xs">
             <div class="card-body">
               <h2 class="card-title">
-                S.T.A. Zanotti
-                <div class="badge badge-secondary">2020</div>
+                Studio Zanotti
+                <div class="badge badge-primary">2020</div>
               </h2>
-              <p class="text-left">If a dog chews shoes whose shoes does he choose?</p>
+              <p class="text-left">
+                I was commissioned by Studio Tecnico Associato Zanotti to create their company website. 
+                It's a WordPress project with the purpose of showing their services and works to clients.
+              </p>
               <div class="card-actions justify-start">
-                <a href="#" class="link">Link</a>
+                <a href="https://studiotecnicozanotti.it/" class="link z-50" target="_blank" rel="noopener noreferrer">Link</a>
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="swap-off">
-
-          <div class="card card-compact w-full sm:w-3/4 bg-base-100 shadow-xl m-auto">
+          <div class="card card-compact border-2 border-primary w-full sm:w-3/4 bg-base-100 shadow-xl m-auto">
             <figure>
-              <img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" />
+              <img src="assets/img/projects/sta-zanotti.jpg" alt="S.T.A. Zanotti" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">S.T.A. Zanotti</h2>
+              <h2 class="card-title">Studio Zanotti</h2>
               <div class="card-actions">
-                <div class="badge badge-secondary">Website</div>
+                <div class="badge badge-primary">Website</div>
               </div>
             </div>
           </div>
-
         </div>
 
       </label>
 
       <!-- Project 2 -->
-      <label class="swap swap-rotate pro-test pro-all">
+      <label class="swap pro-test pro-all">
         <!-- this hidden checkbox controls the state -->
         <input type="checkbox" />
         
-        <div class="swap-on">
-
-          <div class="card card-compact w-full sm:w-3/4 bg-base-100 shadow-xl m-auto">
+        <div class="swap-on z-40">
+          <div class="card card-compact border-2 border-primary w-full sm:w-3/4 bg-base-100 shadow-xl m-auto max-w-xs">
             <div class="card-body">
               <h2 class="card-title">
-                Test
-                <div class="badge badge-secondary">2022</div>
+                Studio Zanotti
+                <div class="badge badge-primary">2020</div>
               </h2>
-              <p class="text-left">If a dog chews shoes whose shoes does he choose?</p>
+              <p class="text-left">
+                I was commissioned by Studio Tecnico Associato Zanotti to create their company website. 
+                It's a WordPress project with the purpose of showing their services and works to clients.
+              </p>
               <div class="card-actions justify-start">
-                <a href="#" class="link">Link</a>
+                <a href="https://studiotecnicozanotti.it/" class="link z-50" target="_blank" rel="noopener noreferrer">Link</a>
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="swap-off">
-
-          <div class="card card-compact w-full sm:w-3/4 bg-base-100 shadow-xl m-auto">
-            <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+          <div class="card card-compact border-2 border-primary w-full sm:w-3/4 bg-base-100 shadow-xl m-auto">
+            <figure>
+              <img src="assets/img/projects/sta-zanotti.jpg" alt="S.T.A. Zanotti" />
+            </figure>
             <div class="card-body">
-              <h2 class="card-title">Test</h2>
+              <h2 class="card-title">Studio Zanotti</h2>
               <div class="card-actions">
-                <div class="badge badge-secondary">Test</div>
+                <div class="badge badge-primary">Test</div>
               </div>
             </div>
           </div>
-
         </div>
 
       </label>
 
       <!-- Project 3 -->
-      <label class="swap swap-rotate pro-test pro-all">
+      <label class="swap pro-test pro-all">
         <!-- this hidden checkbox controls the state -->
         <input type="checkbox" />
         
-        <div class="swap-on">
-
-          <div class="card card-compact w-full sm:w-3/4 bg-base-100 shadow-xl m-auto">
+        <div class="swap-on z-40">
+          <div class="card card-compact border-2 border-primary w-full sm:w-3/4 bg-base-100 shadow-xl m-auto max-w-xs">
             <div class="card-body">
               <h2 class="card-title">
-                Test
-                <div class="badge badge-secondary">2022</div>
+                Studio Zanotti
+                <div class="badge badge-primary">2020</div>
               </h2>
-              <p class="text-left">If a dog chews shoes whose shoes does he choose?</p>
+              <p class="text-left">
+                I was commissioned by Studio Tecnico Associato Zanotti to create their company website. 
+                It's a WordPress project with the purpose of showing their services and works to clients.
+              </p>
               <div class="card-actions justify-start">
-                <a href="#" class="link">Link</a>
+                <a href="https://studiotecnicozanotti.it/" class="link z-50" target="_blank" rel="noopener noreferrer">Link</a>
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="swap-off">
-
-          <div class="card card-compact w-full sm:w-3/4 bg-base-100 shadow-xl m-auto">
-            <figure><img src="https://api.lorem.space/image/shoes?w=400&h=225" alt="Shoes" /></figure>
+          <div class="card card-compact border-2 border-primary w-full sm:w-3/4 bg-base-100 shadow-xl m-auto">
+            <figure>
+              <img src="assets/img/projects/sta-zanotti.jpg" alt="S.T.A. Zanotti" />
+            </figure>
             <div class="card-body">
-              <h2 class="card-title">Test</h2>
+              <h2 class="card-title">Studio Zanotti</h2>
               <div class="card-actions">
-                <div class="badge badge-secondary">Test</div>
+                <div class="badge badge-primary">Test</div>
               </div>
             </div>
           </div>
-
         </div>
 
       </label>
