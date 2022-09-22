@@ -12,3 +12,7 @@
     display: none;
     position: fixed;
 }
+
+.swap-projects{
+    grid-template-columns: 1fr;
+}
