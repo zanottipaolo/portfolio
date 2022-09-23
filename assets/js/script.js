@@ -36,19 +36,20 @@ function filterProjects(data){
 }
 
 
-/* */
 /* Back to top */
-/* */
+
 
 // Back to top button
 let btn = document.getElementById("btn-top");
-
-// When the user scrolls down 20px from the top of the document, show the button
+ 
+// when user scrolls call this function
 window.onscroll = function () {
-  scrollFunction();
+  scrollFunctionBtn();
+  handleProgressBar();
 };
 
-function scrollFunction() {
+// When the user scrolls down 20px from the top of the document, show the button
+function scrollFunctionBtn() {
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
         btn.style.display = "block";
     else 
@@ -61,4 +62,11 @@ btn.addEventListener("click", backToTop);
 function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+function handleProgressBar(){
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    document.getElementById("p-bar").value = scrolled;
 }
