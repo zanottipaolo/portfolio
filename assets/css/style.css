@@ -1,0 +1,18 @@
+#hero{
+    background: url("../img/diano.jpg") top center no-repeat;
+    background-size: cover;
+}
+
+.typed-cursor{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+#btn-top {
+    display: none;
+    position: fixed;
+}
+
+.swap-projects{
+    grid-template-columns: 1fr;
+}
