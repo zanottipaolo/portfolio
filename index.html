@@ -34,7 +34,7 @@
 
   <!-- Navbar -->
   <div class="sticky top-0 shadow z-50">
-    <header class="bg-primary">
+    <header class="bg-primary" id="header">
       <div class="sm:flex items-center justify-between p-2 mx-auto max-w-7xl text-primary-content">
         <div class="flex justify-between items-center">
   
@@ -53,8 +53,8 @@
           </a>
   
           <!-- Hamburger Button -->
-          <div class="sm:hidden">
-            <label class="btn btn-circle swap swap-rotate">
+          <div class="sm:hidden mr-4">
+            <label class="swap swap-rotate">
               <!-- this hidden checkbox controls the state -->
               <input type="checkbox" onclick="toggleMenu()" id="checkMenu" />
               <!-- hamburger icon -->
@@ -71,10 +71,10 @@
         <!-- Menu -->
         <div class="hidden mt-5 text-center sm:flex sm:mt-0" id="menu">
           <ul class="items-center sm:flex" id="menu-content">
-            <li class="mb-3 sm:float-left sm:mr-14 sm:mb-0" onclick="clickOnCheckbox()"><a href="#about" class="hover:font-bold">About 🙋🏻‍♂️</a></li>
-            <li class="mb-3 sm:float-left sm:mr-14 sm:mb-0" onclick="clickOnCheckbox()"><a href="#skills" class="">Skills 🏋🏻‍♂️</a></li>
-            <li class="mb-3 sm:float-left sm:mr-14 sm:mb-0" onclick="clickOnCheckbox()"><a href="#projects" class="">Projects 🎯</a></li>
-            <li class="mb-3 sm:float-left sm:mr-14 sm:mb-0" onclick="clickOnCheckbox()"><a href="#contact" class="">Contact ✏️</a></li>
+            <li class="mb-3 sm:float-left sm:mr-14 sm:mb-0"><a href="#about" onclick="clickOnCheckbox()" class="hover:font-bold">About 🙋🏻‍♂️</a></li>
+            <li class="mb-3 sm:float-left sm:mr-14 sm:mb-0"><a href="#skills" onclick="clickOnCheckbox()" class="">Skills 🏋🏻‍♂️</a></li>
+            <li class="mb-3 sm:float-left sm:mr-14 sm:mb-0"><a href="#projects" onclick="clickOnCheckbox()" class="">Projects 🎯</a></li>
+            <li class="mb-3 sm:float-left sm:mr-14 sm:mb-0"><a href="#contact" onclick="clickOnCheckbox()" class="">Contact ✏️</a></li>
           </ul>
   
           <!-- Change Theme -->

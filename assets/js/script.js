@@ -12,15 +12,30 @@ let typed = new Typed('#typed', {
     smartBackspace: true,
 });
 
-// Show/Hide Mobile menu
+
+/* Show/Hide Mobile menu */ 
+
+// open and close menu on click
 function toggleMenu(){
     document.getElementById("menu").classList.toggle("hidden");
     document.getElementById("bar-menu").classList.toggle("hidden");
 }
 
+// close menu when click on links
 function clickOnCheckbox(){
     document.getElementById("checkMenu").click();
 }
+
+// close menu when click outside of it
+let mobmenu = document.getElementById("header");
+document.addEventListener('click', (event) => {
+    if (!mobmenu.contains(event.target)) {
+      if(!document.getElementById("menu-content").classList.contains("hidden")){
+        clickOnCheckbox();
+      }
+      
+    }
+  });
 
 // Filter projects
 function filterProjects(data){
