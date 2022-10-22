@@ -105,8 +105,11 @@ function activeColor(){
         if(top >= offset && top < offset + height){
             navLinks.forEach(links => {
                 links.classList.remove('font-bold');
-                if(id != 'hero')
-                    document.querySelector('#menu-content li a[href*=' + id + ']').classList.add('font-bold')
+                links.classList.add('md:hover:mr-1');
+                if(id != 'hero'){
+                    document.querySelector('#menu-content li a[href*=' + id + ']').classList.add('font-bold');
+                    document.querySelector('#menu-content li a[href*=' + id + ']').classList.remove('md:hover:mr-1')
+                }
             })
         }
     });
