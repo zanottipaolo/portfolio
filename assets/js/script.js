@@ -30,10 +30,9 @@ function clickOnCheckbox(){
 let mobmenu = document.getElementById("header");
 document.addEventListener('click', (event) => {
     if (!mobmenu.contains(event.target)) {
-      if(!document.getElementById("menu-content").classList.contains("hidden")){
+      if(!document.getElementById("menu").classList.contains("hidden")){
         clickOnCheckbox();
       }
-      
     }
   });
 
