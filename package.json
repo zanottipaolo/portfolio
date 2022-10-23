@@ -8,6 +8,6 @@
     "typed.js": "^2.0.12"
   },
   "scripts": {
-    "build": "npm install"
+    "build": "npx tailwindcss -i ./assets/css/style.css -o ./assets/css/tailwind.css --minify"
   }
 }
