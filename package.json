@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.2.1"
+  },
+  "dependencies": {
+    "daisyui": "^2.33.0",
+    "theme-change": "^2.2.0",
+    "typed.js": "^2.0.12"
+  }
+}
