@@ -112,3 +112,22 @@ function activeColor(){
         }
     });
 }
+
+
+/* CHANGE THEME */
+
+
+const html = document.documentElement
+const themeButtons = document.querySelectorAll('[data-set-theme]');
+
+themeButtons.forEach((button) => {
+    const theme = button.dataset.setTheme;
+
+    button.addEventListener('click', () => {
+        html.dataset.theme = theme;
+        for(let i=0; i<themeButtons.length; i++){
+            themeButtons[i].classList.remove("outline");
+        }
+        button.classList.add("outline")
+    })
+})
