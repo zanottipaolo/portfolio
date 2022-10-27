@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Balsamiq San";
+    font-weight: 400;
+    src: url("../fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Balsamiq San";
+    font-weight: 700;
+    src: url("../fonts/Balsamiq_Sans/BalsamiqSans-Bold.ttf");
+}
+
 #hero{
     background: url("../img/diano.jpg") top center no-repeat;
     background-size: cover;
