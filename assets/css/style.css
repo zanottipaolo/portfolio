@@ -32,3 +32,12 @@
 .swap-projects{
     grid-template-columns: 1fr;
 }
+
+/* Halloween custom */
+[data-theme="halloween"] .halloween-content {
+    display: block;
+}
+
+[data-theme="halloween"] .normal-content {
+    display: none;
+}
