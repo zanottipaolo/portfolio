@@ -3,15 +3,21 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Balsamiq San";
+    font-family: "Quicksand";
     font-weight: 400;
-    src: url("../fonts/Balsamiq_Sans/BalsamiqSans-Regular.ttf");
+    src: url("../fonts/Quicksand/static/Quicksand-Medium.ttf");
 }
 
 @font-face {
-    font-family: "Balsamiq San";
+    font-family: "Quicksand";
+    font-weight: 500;
+    src: url("../fonts/Quicksand/static/Quicksand-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Quicksand";
     font-weight: 700;
-    src: url("../fonts/Balsamiq_Sans/BalsamiqSans-Bold.ttf");
+    src: url("../fonts/Quicksand/static/Quicksand-Bold.ttf");
 }
 
 #hero{
