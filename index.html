@@ -775,9 +775,9 @@
         </div>
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <img
-            class="object-cover object-center rounded-xl border-solid border-2 border-primary"
+            class="object-cover object-center rounded-xl border-solid border-2 border-primary aspect-square"
             alt="About me"
-            src="assets/img/panchina.jpg"
+            src="./assets/img/panchina.jpg"
           />
           <p class="italic text-center">
             Me at
@@ -795,7 +795,9 @@
       </div>
 
       <!-- Resume -->
-      <div class="md:flex overflow-auto container mx-auto">
+      <div
+        class="md:flex overflow-auto container mx-auto md:overflow-y-auto md:h-[35rem]"
+      >
         <!-- Resume: Education -->
         <div class="mx-5 pb-10 md:w-1/2">
           <h3
@@ -834,21 +836,6 @@
                 <button
                   class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
                 >
-                  DB
-                </button>
-                <button
-                  class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
-                >
-                  OS
-                </button>
-                <button
-                  class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
-                >
-                  OOP
-                </button>
-                <button
-                  class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
-                >
                   NET
                 </button>
                 <button
@@ -864,7 +851,7 @@
                 <button
                   class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
                 >
-                  Statistics
+                  Control system
                 </button>
                 <button
                   class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
@@ -874,7 +861,7 @@
                 <button
                   class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
                 >
-                  Project Management
+                  Management Engineering
                 </button>
               </div>
             </li>
@@ -943,7 +930,7 @@
                   class="bg-primary w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"
                 ></div>
               </div>
-              <div class="ml-6 mb-6 -mt-5">
+              <div class="ml-6 mb-6 pb-6 -mt-5">
                 <h4 class="font-semibold text-xl -mt-2">
                   Freelance Software Engineer
                 </h4>
@@ -960,17 +947,56 @@
                 <button
                   class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
                 >
-                  Web
-                </button>
-                <button
-                  class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
-                >
                   Software development
                 </button>
                 <button
                   class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
                 >
                   Problem Solving
+                </button>
+              </div>
+            </li>
+
+            <!-- ReactBricks -->
+            <li>
+              <div class="flex flex-start items-center">
+                <div
+                  class="bg-primary w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"
+                ></div>
+              </div>
+              <div class="ml-6 mb-6 pb-6 -mt-5">
+                <h4 class="font-semibold text-xl -mt-2">
+                  Web Developer
+                  <a
+                    href="https://reactbricks.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="link-primary transition duration-300 ease-in-out whitespace-nowrap"
+                    >@ ReactBricks</a
+                  >
+                </h4>
+                <p class="text-secondary text-sm">
+                  January 2023 ÷ present |
+                  <span class="italic">Bergamo, Italy</span>
+                </p>
+                <p class="mt-2 mb-4">
+                  <span class="font-sans">📌</span> Web-app development using
+                  React, Tailwind and NestJS<br />
+                </p>
+                <button
+                  class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
+                >
+                  React
+                </button>
+                <button
+                  class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
+                >
+                  Tailwind
+                </button>
+                <button
+                  class="btn-sm btn-primary font-medium text-xs mb-2 cursor-default uppercase rounded shadow-md hover:shadow-lg transition duration-300 ease-in-out"
+                >
+                  NestJS
                 </button>
               </div>
             </li>
@@ -982,7 +1008,7 @@
                   class="bg-primary w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"
                 ></div>
               </div>
-              <div class="ml-6 mb-6 -mt-5">
+              <div class="ml-6 mb-6 pb-6 -mt-5">
                 <h4 class="font-semibold text-xl -mt-2">
                   Computer science teacher
                   <a
