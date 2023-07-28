@@ -11,7 +11,7 @@ module.exports = {
       {
         lightred: {
           ...require("daisyui/src/colors/themes")["[data-theme=cmyk]"],
-          fontFamily: "Quicksand",
+          fontFamily: "Open Sans",
           primary: "#F67280",
           secondary: "#C06C84",
           accent: "#6C5B7B",
@@ -19,7 +19,7 @@ module.exports = {
         },
         darkred: {
           ...require("daisyui/src/colors/themes")["[data-theme=dracula]"],
-          fontFamily: "Quicksand",
+          fontFamily: "Open Sans",
           primary: "#F67280",
           secondary: "#C06C84",
           accent: "#6C5B7B",
@@ -27,7 +27,7 @@ module.exports = {
         },
         lightgreen: {
           ...require("daisyui/src/colors/themes")["[data-theme=cmyk]"],
-          fontFamily: "Quicksand",
+          fontFamily: "Open Sans",
           primary: "#1FAB89",
           secondary: "#62D2A2",
           accent: "#9DF3C4",
@@ -35,7 +35,7 @@ module.exports = {
         },
         darkgreen: {
           ...require("daisyui/src/colors/themes")["[data-theme=dracula]"],
-          fontFamily: "Quicksand",
+          fontFamily: "Open Sans",
           primary: "#1FAB89",
           secondary: "#62D2A2",
           accent: "#9DF3C4",
