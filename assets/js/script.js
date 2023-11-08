@@ -115,7 +115,7 @@ function activeColor() {
 const html = document.documentElement
 const themeButtons = document.querySelectorAll("[data-set-theme]")
 
-html.dataset.theme = localStorage.getItem("theme") ?? "halloween"
+html.dataset.theme = localStorage.getItem("theme") ?? "lightred"
 
 themeButtons.forEach((button) => {
   const theme = button.dataset.setTheme
