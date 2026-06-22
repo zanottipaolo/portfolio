@@ -82,6 +82,24 @@
           localStorage.setItem("theme", "dark")
         }
       }
+
+      function toggleMenu() {
+        let links = document.getElementById("navLinks")
+        let btn = document.querySelector(".nav-toggle")
+        let open = links.classList.toggle("open")
+        btn.classList.toggle("open", open)
+        btn.setAttribute("aria-expanded", open ? "true" : "false")
+      }
+
+      document.addEventListener("click", function (e) {
+        if (e.target.closest(".nav-links a")) {
+          let links = document.getElementById("navLinks")
+          let btn = document.querySelector(".nav-toggle")
+          links.classList.remove("open")
+          btn.classList.remove("open")
+          btn.setAttribute("aria-expanded", "false")
+        }
+      })
     </script>
   </head>
   <body>
@@ -124,7 +142,8 @@
               object-fit: cover;
             "
         /></a>
-        <div style="display: flex; gap: 28px; align-items: center">
+        <div class="nav-right">
+          <div class="nav-links" id="navLinks">
           <a
             href="#about"
             style="
@@ -180,6 +199,7 @@
             style-hover="color: var(--text)"
             >Contact</a
           >
+          </div>
           <button
             type="button"
             class="theme-toggle"
@@ -210,6 +230,34 @@
               <path
                 d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
               />
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="nav-toggle"
+            onclick="toggleMenu()"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <svg
+              class="icon-bars"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+            <svg
+              class="icon-close"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+            >
+              <path d="M6 6l12 12M18 6L6 18" />
             </svg>
           </button>
         </div>
