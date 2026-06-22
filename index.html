@@ -103,102 +103,19 @@
     </script>
   </head>
   <body>
-    <div
-      style="
-        background: var(--bg);
-        color: var(--text);
-        font-family: &quot;DM Sans&quot;, system-ui, sans-serif;
-        font-size: 17px;
-        line-height: 1.7;
-      "
-    >
+    <div class="site">
       <!-- Navigation -->
-      <nav
-        style="
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 100;
-          height: 72px;
-          padding: 0 48px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          background: var(--nav-bg);
-          backdrop-filter: blur(16px);
-          -webkit-backdrop-filter: blur(16px);
-          border-bottom: 1px solid var(--nav-border);
-        "
-      >
-        <a href="#top" style="display: flex; align-items: center"
-          ><img
-            src="assets/profile.jpeg"
-            alt="Profile image"
-            style="
-              width: 48px;
-              height: 48px;
-              border-radius: 50%;
-              object-fit: cover;
-            "
-        /></a>
+      <nav class="nav">
+        <a href="#top" class="nav-logo">
+          <img src="assets/profile.jpeg" alt="Profile image" class="nav-avatar" />
+        </a>
         <div class="nav-right">
           <div class="nav-links" id="navLinks">
-          <a
-            href="#about"
-            style="
-              font-size: 14px;
-              color: var(--text-soft);
-              text-decoration: none;
-              transition: color 0.2s;
-            "
-            style-hover="color: var(--text)"
-            >About</a
-          >
-          <a
-            href="#experience"
-            style="
-              font-size: 14px;
-              color: var(--text-soft);
-              text-decoration: none;
-              transition: color 0.2s;
-            "
-            style-hover="color: var(--text)"
-            >Experience</a
-          >
-          <a
-            href="#projects"
-            style="
-              font-size: 14px;
-              color: var(--text-soft);
-              text-decoration: none;
-              transition: color 0.2s;
-            "
-            style-hover="color: var(--text)"
-            >Projects</a
-          >
-          <a
-            href="#skills"
-            style="
-              font-size: 14px;
-              color: var(--text-soft);
-              text-decoration: none;
-              transition: color 0.2s;
-            "
-            style-hover="color: var(--text)"
-            >Skills</a
-          >
-          <a
-            href="#contact"
-            style="
-              font-size: 14px;
-              color: var(--text-soft);
-              text-decoration: none;
-              transition: color 0.2s;
-            "
-            style-hover="color: var(--text)"
-            >Contact</a
-          >
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
           </div>
           <button
             type="button"
@@ -264,55 +181,18 @@
       </nav>
 
       <!-- Hero -->
-      <section
-        id="top"
-        style="
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 0 48px;
-        "
-      >
-        <div style="max-width: 720px; margin: 0 auto; width: 100%">
-          <p
-            style="
-              font-family: &quot;JetBrains Mono&quot;, monospace;
-              font-size: 13px;
-              color: var(--text-faint);
-              margin: 0 0 20px 0;
-              letter-spacing: 0.1em;
-              text-transform: uppercase;
-            "
-          >
-            Software Engineer
-          </p>
-          <h1
-            style="
-              font-size: 76px;
-              font-weight: 600;
-              line-height: 1;
-              margin: 0 0 28px 0;
-              letter-spacing: -0.04em;
-            "
-          >
-            Paolo Zanotti
-          </h1>
-          <p
-            style="
-              font-size: 19px;
-              color: var(--text-muted);
-              max-width: 520px;
-              margin: 0 0 36px 0;
-              line-height: 1.55;
-            "
-          >
+      <section id="top" class="hero">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">Software Engineer</p>
+          <h1 class="hero-title">Paolo Zanotti</h1>
+          <p class="hero-lead">
             Based in Rome, Italy. I build custom software solutions for
             businesses and startups — from concept to production.
           </p>
-          <div style="display: flex; gap: 24px; align-items: center">
-            <a href="mailto:hello@paolozanotti.dev"
-              ><svg
+          <div class="socials">
+            <a href="mailto:hello@paolozanotti.dev" aria-label="Email">
+              <svg
+                class="social-icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -322,19 +202,22 @@
                 stroke-width="1"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                style="color: var(--text-soft); display: block"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path
                   d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"
                 />
-                <path d="M3 7l9 6l9 -6" /></svg
-            ></a>
+                <path d="M3 7l9 6l9 -6" />
+              </svg>
+            </a>
             <a
               href="https://github.com/zanottipaolo"
               target="_blank"
               rel="noopener noreferrer"
-              ><svg
+              aria-label="GitHub"
+            >
+              <svg
+                class="social-icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -344,18 +227,21 @@
                 stroke-width="1"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                style="color: var(--text-soft); display: block"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path
                   d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                /></svg
-            ></a>
+                />
+              </svg>
+            </a>
             <a
               href="https://www.linkedin.com/in/paolo-zanotti"
               target="_blank"
               rel="noopener noreferrer"
-              ><svg
+              aria-label="LinkedIn"
+            >
+              <svg
+                class="social-icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -365,7 +251,6 @@
                 stroke-width="1"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                style="color: var(--text-soft); display: block"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M8 11v5" />
@@ -374,55 +259,22 @@
                 <path d="M16 16v-3a2 2 0 1 0 -4 0" />
                 <path
                   d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"
-                /></svg
-            ></a>
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </section>
 
       <!-- About -->
-      <section
-        id="about"
-        style="
-          padding: 100px 48px;
-          border-top: 1px solid var(--border);
-          scroll-margin-top: 72px;
-        "
-      >
-        <div style="max-width: 720px; margin: 0 auto">
-          <p
-            style="
-              font-family: &quot;JetBrains Mono&quot;, monospace;
-              font-size: 13px;
-              color: var(--text-faint);
-              margin: 0 0 48px 0;
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-            "
-          >
-            01 — About
-          </p>
-          <p
-            style="
-              font-size: 24px;
-              line-height: 1.55;
-              margin: 0 0 20px 0;
-              font-weight: 400;
-              color: var(--text);
-              letter-spacing: -0.01em;
-            "
-          >
+      <section id="about" class="section">
+        <div class="container">
+          <p class="eyebrow">01 — About</p>
+          <p class="lead">
             Originally from Bergamo, now based in Rome. I write code, play CTF
             challenges, and read books.
           </p>
-          <p
-            style="
-              font-size: 17px;
-              color: var(--text-muted);
-              margin: 0;
-              line-height: 1.7;
-            "
-          >
+          <p class="body-text">
             I'm passionate about computer science, renewable energy, and
             biomedical engineering. I love exploring the intersections of
             technology and different engineering disciplines — always looking
@@ -432,70 +284,18 @@
       </section>
 
       <!-- Experience -->
-      <section
-        id="experience"
-        style="
-          padding: 100px 48px;
-          border-top: 1px solid var(--border);
-          scroll-margin-top: 72px;
-        "
-      >
-        <div style="max-width: 720px; margin: 0 auto">
-          <p
-            style="
-              font-family: &quot;JetBrains Mono&quot;, monospace;
-              font-size: 13px;
-              color: var(--text-faint);
-              margin: 0 0 48px 0;
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-            "
-          >
-            02 — Experience
-          </p>
+      <section id="experience" class="section">
+        <div class="container">
+          <p class="eyebrow">02 — Experience</p>
 
-          <div style="display: flex; gap: 48px; margin-bottom: 48px">
-            <div style="flex: none; width: 140px">
-              <p
-                style="
-                  font-family: &quot;JetBrains Mono&quot;, monospace;
-                  font-size: 13px;
-                  color: var(--text-faint);
-                  margin: 0;
-                  line-height: 1.7;
-                "
-              >
-                2023 — Present
-              </p>
+          <div class="xp">
+            <div class="xp-date-col">
+              <p class="xp-date">2023 — Present</p>
             </div>
-            <div style="flex: 1; min-width: 0">
-              <h3
-                style="
-                  font-size: 17px;
-                  font-weight: 600;
-                  margin: 0 0 4px 0;
-                  line-height: 1.4;
-                "
-              >
-                Freelance Software Engineer
-              </h3>
-              <p
-                style="
-                  font-size: 14px;
-                  color: var(--text-faint);
-                  margin: 0 0 10px 0;
-                "
-              >
-                Self-employed
-              </p>
-              <p
-                style="
-                  font-size: 15px;
-                  color: var(--text-muted);
-                  margin: 0;
-                  line-height: 1.6;
-                "
-              >
+            <div class="xp-body">
+              <h3 class="xp-title">Freelance Software Engineer</h3>
+              <p class="xp-org">Self-employed</p>
+              <p class="xp-desc">
                 Custom software development, MVP builds, and technical
                 consulting for startups and businesses. IT strategy advisory and
                 digital transformation support.
@@ -503,48 +303,14 @@
             </div>
           </div>
 
-          <div style="display: flex; gap: 48px; margin-bottom: 48px">
-            <div style="flex: none; width: 140px">
-              <p
-                style="
-                  font-family: &quot;JetBrains Mono&quot;, monospace;
-                  font-size: 13px;
-                  color: var(--text-faint);
-                  margin: 0;
-                  line-height: 1.7;
-                "
-              >
-                2021 — 2023
-              </p>
+          <div class="xp">
+            <div class="xp-date-col">
+              <p class="xp-date">2021 — 2023</p>
             </div>
-            <div style="flex: 1; min-width: 0">
-              <h3
-                style="
-                  font-size: 17px;
-                  font-weight: 600;
-                  margin: 0 0 4px 0;
-                  line-height: 1.4;
-                "
-              >
-                Web Developer
-              </h3>
-              <p
-                style="
-                  font-size: 14px;
-                  color: var(--text-faint);
-                  margin: 0 0 10px 0;
-                "
-              >
-                Officine Digitali Italiane
-              </p>
-              <p
-                style="
-                  font-size: 15px;
-                  color: var(--text-muted);
-                  margin: 0;
-                  line-height: 1.6;
-                "
-              >
+            <div class="xp-body">
+              <h3 class="xp-title">Web Developer</h3>
+              <p class="xp-org">Officine Digitali Italiane</p>
+              <p class="xp-desc">
                 Frontend and backend development for client projects. Built
                 custom web applications, WordPress and Shopify sites using
                 modern frameworks and tools.
@@ -552,48 +318,14 @@
             </div>
           </div>
 
-          <div style="display: flex; gap: 48px">
-            <div style="flex: none; width: 140px">
-              <p
-                style="
-                  font-family: &quot;JetBrains Mono&quot;, monospace;
-                  font-size: 13px;
-                  color: var(--text-faint);
-                  margin: 0;
-                  line-height: 1.7;
-                "
-              >
-                2019 — 2023
-              </p>
+          <div class="xp">
+            <div class="xp-date-col">
+              <p class="xp-date">2019 — 2023</p>
             </div>
-            <div style="flex: 1; min-width: 0">
-              <h3
-                style="
-                  font-size: 17px;
-                  font-weight: 600;
-                  margin: 0 0 4px 0;
-                  line-height: 1.4;
-                "
-              >
-                B.Sc. Computer Science
-              </h3>
-              <p
-                style="
-                  font-size: 14px;
-                  color: var(--text-faint);
-                  margin: 0 0 10px 0;
-                "
-              >
-                Università degli Studi di Bergamo
-              </p>
-              <p
-                style="
-                  font-size: 15px;
-                  color: var(--text-muted);
-                  margin: 0;
-                  line-height: 1.6;
-                "
-              >
+            <div class="xp-body">
+              <h3 class="xp-title">B.Sc. Computer Science</h3>
+              <p class="xp-org">Università degli Studi di Bergamo</p>
+              <p class="xp-desc">
                 Thesis: Automatic filtering of clinical text — a comparative
                 analysis of structure-based, ontology-based, and LLM-based
                 approaches.
@@ -604,98 +336,26 @@
       </section>
 
       <!-- Projects -->
-      <section
-        id="projects"
-        style="
-          padding: 100px 48px;
-          border-top: 1px solid var(--border);
-          scroll-margin-top: 72px;
-        "
-      >
-        <div style="max-width: 720px; margin: 0 auto">
-          <p
-            style="
-              font-family: &quot;JetBrains Mono&quot;, monospace;
-              font-size: 13px;
-              color: var(--text-faint);
-              margin: 0 0 48px 0;
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-            "
-          >
-            03 — Projects
-          </p>
+      <section id="projects" class="section">
+        <div class="container">
+          <p class="eyebrow">03 — Projects</p>
 
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+          <div class="projects-grid">
             <a
               href="https://paolozanotti.dev/projects/bsc-thesis"
               target="_blank"
               rel="noopener"
-              style="
-                display: flex;
-                flex-direction: column;
-                padding: 28px;
-                border: 1px solid var(--border);
-                background: var(--surface);
-                text-decoration: none;
-                color: inherit;
-                transition: border-color 0.25s;
-              "
-              style-hover="borderColor: var(--text-faint)"
+              class="project-card"
             >
-              <h3
-                style="
-                  font-size: 17px;
-                  font-weight: 600;
-                  margin: 0 0 10px 0;
-                  line-height: 1.3;
-                "
-              >
-                B.Sc. Thesis
-              </h3>
-              <p
-                style="
-                  font-size: 14px;
-                  color: var(--text-muted);
-                  margin: 0 0 20px 0;
-                  line-height: 1.55;
-                  flex: 1;
-                "
-              >
+              <h3 class="project-title">B.Sc. Thesis</h3>
+              <p class="project-desc">
                 Automatic filtering of clinical text using structure-based,
                 ontology-based, and LLM-based approaches.
               </p>
-              <div style="display: flex; gap: 6px; flex-wrap: wrap">
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >Python</span
-                >
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >PyTorch</span
-                >
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >AI</span
-                >
+              <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">AI</span>
               </div>
             </a>
 
@@ -703,61 +363,16 @@
               href="https://golazometrics.com"
               target="_blank"
               rel="noopener"
-              style="
-                display: flex;
-                flex-direction: column;
-                padding: 28px;
-                border: 1px solid var(--border);
-                background: var(--surface);
-                text-decoration: none;
-                color: inherit;
-                transition: border-color 0.25s;
-              "
-              style-hover="borderColor: var(--text-faint)"
+              class="project-card"
             >
-              <h3
-                style="
-                  font-size: 17px;
-                  font-weight: 600;
-                  margin: 0 0 10px 0;
-                  line-height: 1.3;
-                "
-              >
-                Golazo
-              </h3>
-              <p
-                style="
-                  font-size: 14px;
-                  color: var(--text-muted);
-                  margin: 0 0 20px 0;
-                  line-height: 1.55;
-                  flex: 1;
-                "
-              >
+              <h3 class="project-title">Golazo</h3>
+              <p class="project-desc">
                 Data analysis platform for amateur and junior football —
                 advanced stats, economics insights, and social media tips.
               </p>
-              <div style="display: flex; gap: 6px; flex-wrap: wrap">
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >AI</span
-                >
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >Astro</span
-                >
+              <div class="tags">
+                <span class="tag">AI</span>
+                <span class="tag">Astro</span>
               </div>
             </a>
 
@@ -765,71 +380,17 @@
               href="https://taylearn-landing.pages.dev/"
               target="_blank"
               rel="noopener"
-              style="
-                display: flex;
-                flex-direction: column;
-                padding: 28px;
-                border: 1px solid var(--border);
-                background: var(--surface);
-                text-decoration: none;
-                color: inherit;
-                transition: border-color 0.25s;
-              "
-              style-hover="borderColor: var(--text-faint)"
+              class="project-card"
             >
-              <h3
-                style="
-                  font-size: 17px;
-                  font-weight: 600;
-                  margin: 0 0 10px 0;
-                  line-height: 1.3;
-                "
-              >
-                Taylearn
-              </h3>
-              <p
-                style="
-                  font-size: 14px;
-                  color: var(--text-muted);
-                  margin: 0 0 20px 0;
-                  line-height: 1.55;
-                  flex: 1;
-                "
-              >
+              <h3 class="project-title">Taylearn</h3>
+              <p class="project-desc">
                 Virtual language assistant for learning languages in an
                 innovative, AI-driven way.
               </p>
-              <div style="display: flex; gap: 6px; flex-wrap: wrap">
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >React</span
-                >
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >Fastify</span
-                >
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >Astro</span
-                >
+              <div class="tags">
+                <span class="tag">React</span>
+                <span class="tag">Fastify</span>
+                <span class="tag">Astro</span>
               </div>
             </a>
 
@@ -837,61 +398,16 @@
               href="https://paolozanotti.dev"
               target="_blank"
               rel="noopener"
-              style="
-                display: flex;
-                flex-direction: column;
-                padding: 28px;
-                border: 1px solid var(--border);
-                background: var(--surface);
-                text-decoration: none;
-                color: inherit;
-                transition: border-color 0.25s;
-              "
-              style-hover="borderColor: var(--text-faint)"
+              class="project-card"
             >
-              <h3
-                style="
-                  font-size: 17px;
-                  font-weight: 600;
-                  margin: 0 0 10px 0;
-                  line-height: 1.3;
-                "
-              >
-                paolozanotti.dev
-              </h3>
-              <p
-                style="
-                  font-size: 14px;
-                  color: var(--text-muted);
-                  margin: 0 0 20px 0;
-                  line-height: 1.55;
-                  flex: 1;
-                "
-              >
+              <h3 class="project-title">paolozanotti.dev</h3>
+              <p class="project-desc">
                 Personal portfolio and blog built from scratch, featuring
                 project showcases and technical writing.
               </p>
-              <div style="display: flex; gap: 6px; flex-wrap: wrap">
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >Astro</span
-                >
-                <span
-                  style="
-                    font-family: &quot;JetBrains Mono&quot;, monospace;
-                    font-size: 11px;
-                    background: var(--surface-alt);
-                    padding: 3px 8px;
-                    color: var(--text-soft);
-                  "
-                  >TypeScript</span
-                >
+              <div class="tags">
+                <span class="tag">Astro</span>
+                <span class="tag">TypeScript</span>
               </div>
             </a>
           </div>
@@ -899,263 +415,95 @@
       </section>
 
       <!-- Skills -->
-      <section
-        id="skills"
-        style="
-          padding: 100px 48px;
-          border-top: 1px solid var(--border);
-          scroll-margin-top: 72px;
-        "
-      >
-        <div style="max-width: 720px; margin: 0 auto">
-          <p
-            style="
-              font-family: &quot;JetBrains Mono&quot;, monospace;
-              font-size: 13px;
-              color: var(--text-faint);
-              margin: 0 0 48px 0;
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-            "
-          >
-            04 — Skills
-          </p>
+      <section id="skills" class="section">
+        <div class="container">
+          <p class="eyebrow">04 — Skills</p>
 
-          <div
-            style="
-              display: grid;
-              grid-template-columns: 140px 1fr;
-              gap: 24px 48px;
-              align-items: baseline;
-            "
-          >
-            <p
-              style="
-                font-family: &quot;JetBrains Mono&quot;, monospace;
-                font-size: 13px;
-                color: var(--text-faint);
-                margin: 0;
-              "
-            >
-              Languages
-            </p>
-            <p style="font-size: 15px; color: var(--text-muted); margin: 0">
+          <div class="skills-grid">
+            <p class="skill-label">Languages</p>
+            <p class="skill-list">
               JavaScript · TypeScript · Python · HTML · CSS
             </p>
 
-            <p
-              style="
-                font-family: &quot;JetBrains Mono&quot;, monospace;
-                font-size: 13px;
-                color: var(--text-faint);
-                margin: 0;
-              "
-            >
-              Frameworks
-            </p>
-            <p style="font-size: 15px; color: var(--text-muted); margin: 0">
+            <p class="skill-label">Frameworks</p>
+            <p class="skill-list">
               React · Astro · Fastify · Angular · Next.js · Bootstrap
             </p>
 
-            <p
-              style="
-                font-family: &quot;JetBrains Mono&quot;, monospace;
-                font-size: 13px;
-                color: var(--text-faint);
-                margin: 0;
-              "
-            >
-              Tools
-            </p>
-            <p style="font-size: 15px; color: var(--text-muted); margin: 0">
+            <p class="skill-label">Tools</p>
+            <p class="skill-list">
               Git · Docker · Jira · Trello · WordPress · Shopify · Vercel
             </p>
 
-            <p
-              style="
-                font-family: &quot;JetBrains Mono&quot;, monospace;
-                font-size: 13px;
-                color: var(--text-faint);
-                margin: 0;
-              "
-            >
-              AI / Data
-            </p>
-            <p style="font-size: 15px; color: var(--text-muted); margin: 0">
-              PyTorch · Tesseract · LLMs · Pandas
-            </p>
+            <p class="skill-label">AI / Data</p>
+            <p class="skill-list">PyTorch · Tesseract · LLMs · Pandas</p>
           </div>
         </div>
       </section>
 
       <!-- Testimonials -->
-      <section
-        id="testimonials"
-        style="
-          padding: 100px 48px;
-          border-top: 1px solid var(--border);
-          scroll-margin-top: 72px;
-        "
-      >
-        <div style="max-width: 720px; margin: 0 auto">
-          <p
-            style="
-              font-family: &quot;JetBrains Mono&quot;, monospace;
-              font-size: 13px;
-              color: var(--text-faint);
-              margin: 0 0 48px 0;
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-            "
-          >
-            05 — Testimonials
-          </p>
+      <section id="testimonials" class="section">
+        <div class="container">
+          <p class="eyebrow">05 — Testimonials</p>
 
-          <div style="margin-bottom: 56px">
-            <p
-              style="
-                font-size: 19px;
-                line-height: 1.65;
-                color: var(--text-quote);
-                margin: 0 0 20px 0;
-                font-style: italic;
-              "
-            >
+          <div class="quote-block">
+            <p class="quote">
               "Paolo è una persona responsabile, capace e corretta. Come
               sviluppatore lavora bene in team e ha ottime doti di problem
               solving. Riesce inoltre ad approcciare nuove tecnologie con
               facilità."
             </p>
-            <p style="font-size: 14px; color: var(--text-faint); margin: 0">
-              <span style="color: var(--text-muted); font-weight: 500"
-                >Claudio Suardi</span
-              >
-              · CTO, Officine Digitali Italiane
+            <p class="quote-author">
+              <strong>Claudio Suardi</strong> · CTO, Officine Digitali Italiane
             </p>
           </div>
 
-          <div>
-            <p
-              style="
-                font-size: 19px;
-                line-height: 1.65;
-                color: var(--text-quote);
-                margin: 0 0 20px 0;
-                font-style: italic;
-              "
-            >
+          <div class="quote-block">
+            <p class="quote">
               "Si è dimostrato molto capace in web design. Quello che ho
               apprezzato particolarmente è la sua disponibilità e
               collaborazione. Il risultato è esattamente quello che volevo."
             </p>
-            <p style="font-size: 14px; color: var(--text-faint); margin: 0">
-              <span style="color: var(--text-muted); font-weight: 500"
-                >Camilla Mazzoleni</span
-              >
-              · Client
+            <p class="quote-author">
+              <strong>Camilla Mazzoleni</strong> · Client
             </p>
           </div>
         </div>
       </section>
 
       <!-- Contact -->
-      <section
-        id="contact"
-        style="
-          padding: 100px 48px;
-          border-top: 1px solid var(--border);
-          scroll-margin-top: 72px;
-        "
-      >
-        <div style="max-width: 720px; margin: 0 auto">
-          <p
-            style="
-              font-family: &quot;JetBrains Mono&quot;, monospace;
-              font-size: 13px;
-              color: var(--text-faint);
-              margin: 0 0 48px 0;
-              letter-spacing: 0.08em;
-              text-transform: uppercase;
-            "
-          >
-            06 — Contact
-          </p>
-          <p
-            style="
-              font-size: 28px;
-              font-weight: 500;
-              margin: 0 0 20px 0;
-              letter-spacing: -0.02em;
-            "
-          >
-            Let's work together.
-          </p>
-          <p
-            style="
-              font-size: 17px;
-              color: var(--text-muted);
-              margin: 0 0 40px 0;
-              max-width: 440px;
-              line-height: 1.6;
-            "
-          >
+      <section id="contact" class="section">
+        <div class="container">
+          <p class="eyebrow">06 — Contact</p>
+          <p class="contact-headline">Let's work together.</p>
+          <p class="contact-text">
             Have a project in mind or just want to say hello? I'd love to hear
             from you.
           </p>
 
-          <div style="display: flex; flex-direction: column; gap: 16px">
-            <a
-              href="mailto:hello@paolozanotti.dev"
-              style="
-                font-family: &quot;JetBrains Mono&quot;, monospace;
-                font-size: 14px;
-                color: var(--text-muted);
-                text-decoration: none;
-                transition: color 0.2s;
-              "
-              style-hover="color: var(--text)"
+          <div class="contact-links">
+            <a href="mailto:hello@paolozanotti.dev" class="contact-link"
               ><span>hello@paolozanotti.dev</span> →</a
             >
             <a
               href="https://github.com/zanottipaolo"
               target="_blank"
               rel="noopener"
-              style="
-                font-family: &quot;JetBrains Mono&quot;, monospace;
-                font-size: 14px;
-                color: var(--text-muted);
-                text-decoration: none;
-                transition: color 0.2s;
-              "
-              style-hover="color: var(--text)"
+              class="contact-link"
               >github.com/zanottipaolo →</a
             >
             <a
               href="https://linkedin.com/in/paolo-zanotti"
               target="_blank"
               rel="noopener"
-              style="
-                font-family: &quot;JetBrains Mono&quot;, monospace;
-                font-size: 14px;
-                color: var(--text-muted);
-                text-decoration: none;
-                transition: color 0.2s;
-              "
-              style-hover="color: var(--text)"
+              class="contact-link"
               >linkedin.com/in/paolo-zanotti →</a
             >
             <a
               href="https://hackerrank.com/zanottipaolo"
               target="_blank"
               rel="noopener"
-              style="
-                font-family: &quot;JetBrains Mono&quot;, monospace;
-                font-size: 14px;
-                color: var(--text-muted);
-                text-decoration: none;
-                transition: color 0.2s;
-              "
-              style-hover="color: var(--text)"
+              class="contact-link"
               >hackerrank.com/zanottipaolo →</a
             >
           </div>
@@ -1163,29 +511,10 @@
       </section>
 
       <!-- Footer -->
-      <footer style="padding: 48px; border-top: 1px solid var(--border)">
-        <div
-          style="
-            max-width: 720px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          "
-        >
-          <p style="font-size: 13px; color: var(--text-faint); margin: 0">
-            © 2026 Paolo Zanotti
-          </p>
-          <p
-            style="
-              font-family: &quot;JetBrains Mono&quot;, monospace;
-              font-size: 12px;
-              color: var(--text-subtle);
-              margin: 0;
-            "
-          >
-            P.IVA 04646520165
-          </p>
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-copy">© 2026 Paolo Zanotti</p>
+          <p class="footer-vat">P.IVA 04646520165</p>
         </div>
       </footer>
     </div>
