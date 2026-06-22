@@ -60,6 +60,29 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Toggle Theme -->
+    <script>
+      let savedTheme = localStorage.getItem("theme")
+      let isDarkMode =
+        savedTheme === "dark" ||
+        (!savedTheme &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      if (isDarkMode)
+        document.documentElement.setAttribute("data-theme", "dark")
+
+      function toggleTheme() {
+        let isDarkMode =
+          document.documentElement.getAttribute("data-theme") === "dark"
+        if (isDarkMode) {
+          document.documentElement.removeAttribute("data-theme")
+          localStorage.setItem("theme", "light")
+        } else {
+          document.documentElement.setAttribute("data-theme", "dark")
+          localStorage.setItem("theme", "dark")
+        }
+      }
+    </script>
   </head>
   <body>
     <div
@@ -102,7 +125,7 @@
           "
           >PZ</a
         >
-        <div style="display: flex; gap: 28px">
+        <div style="display: flex; gap: 28px; align-items: center">
           <a
             href="#about"
             style="
@@ -158,6 +181,38 @@
             style-hover="color: var(--text)"
             >Contact</a
           >
+          <button
+            type="button"
+            class="theme-toggle"
+            onclick="toggleTheme()"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+              />
+            </svg>
+          </button>
         </div>
       </nav>
 
@@ -263,7 +318,12 @@
             challenges, and read books.
           </p>
           <p
-            style="font-size: 17px; color: var(--text-muted); margin: 0; line-height: 1.7"
+            style="
+              font-size: 17px;
+              color: var(--text-muted);
+              margin: 0;
+              line-height: 1.7;
+            "
           >
             I'm passionate about computer science, renewable energy, and
             biomedical engineering. I love exploring the intersections of
@@ -321,7 +381,13 @@
               >
                 Freelance Software Engineer
               </h3>
-              <p style="font-size: 14px; color: var(--text-faint); margin: 0 0 10px 0">
+              <p
+                style="
+                  font-size: 14px;
+                  color: var(--text-faint);
+                  margin: 0 0 10px 0;
+                "
+              >
                 Self-employed
               </p>
               <p
@@ -364,7 +430,13 @@
               >
                 Web Developer
               </h3>
-              <p style="font-size: 14px; color: var(--text-faint); margin: 0 0 10px 0">
+              <p
+                style="
+                  font-size: 14px;
+                  color: var(--text-faint);
+                  margin: 0 0 10px 0;
+                "
+              >
                 Officine Digitali Italiane
               </p>
               <p
@@ -407,7 +479,13 @@
               >
                 B.Sc. Computer Science
               </h3>
-              <p style="font-size: 14px; color: var(--text-faint); margin: 0 0 10px 0">
+              <p
+                style="
+                  font-size: 14px;
+                  color: var(--text-faint);
+                  margin: 0 0 10px 0;
+                "
+              >
                 Università degli Studi di Bergamo
               </p>
               <p
