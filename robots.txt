@@ -1,0 +1,6 @@
+User-agent: Googlebot-Image
+Disallow: /assets/*.jpeg
+Disallow: /assets/*.jpg
+Disallow: /assets/*.gif
+Disallow: /assets/*.svg
+Disallow: /assets/*.png
