@@ -88,6 +88,11 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 .nav-avatar {
   width: 3rem;
@@ -159,6 +164,12 @@ body {
 }
 .theme-toggle:hover {
   color: var(--text);
+  transform: rotate(45deg);
+  transition: transform 0.3s;
+}
+.theme-toggle:not(:hover) {
+  transform: rotate(0deg);
+  transition: transform 0.15s;
 }
 .theme-toggle svg {
   width: 1.125rem;
@@ -215,7 +226,6 @@ body {
   font-weight: 600;
   line-height: 1;
   margin: 0 0 1.75rem 0;
-  letter-spacing: -0.04em;
 }
 .hero-lead {
   font-size: 1.1875rem;
@@ -223,6 +233,10 @@ body {
   max-width: 32.5rem;
   margin: 0 0 2.25rem 0;
   line-height: 1.55;
+}
+.hero-hand {
+  width: 4rem;
+  height: 4rem;
 }
 .socials {
   display: flex;
@@ -407,11 +421,17 @@ body {
   font-family: var(--font-mono);
   font-size: 0.875rem;
   color: var(--text-muted);
-  text-decoration: none;
   transition: color 0.2s;
+  text-decoration: dotted underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.25rem;
 }
 .contact-link:hover {
   color: var(--text);
+  text-decoration-color: var(--text);
+  transition:
+    text-decoration 0.2s,
+    text-decoration-color 0.2s;
 }
 
 /* Footer */
@@ -485,6 +505,10 @@ body {
   }
   .hero-title {
     font-size: 3rem;
+  }
+  .hero-hand {
+    width: 2.5rem;
+    height: 2.5rem;
   }
   .projects-grid {
     grid-template-columns: 1fr;

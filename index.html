@@ -82,442 +82,400 @@
           localStorage.setItem("theme", "dark")
         }
       }
-
-      function toggleMenu() {
-        let links = document.getElementById("navLinks")
-        let btn = document.querySelector(".nav-toggle")
-        let open = links.classList.toggle("open")
-        btn.classList.toggle("open", open)
-        btn.setAttribute("aria-expanded", open ? "true" : "false")
-      }
-
-      document.addEventListener("click", function (e) {
-        if (e.target.closest(".nav-links a")) {
-          let links = document.getElementById("navLinks")
-          let btn = document.querySelector(".nav-toggle")
-          links.classList.remove("open")
-          btn.classList.remove("open")
-          btn.setAttribute("aria-expanded", "false")
-        }
-      })
     </script>
   </head>
-  <body>
-    <div class="site">
-      <!-- Navigation -->
-      <nav class="nav">
-        <a href="#top" class="nav-logo">
-          <img src="assets/profile.jpeg" alt="Profile image" class="nav-avatar" />
-        </a>
-        <div class="nav-right">
-          <div class="nav-links" id="navLinks">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-          </div>
-          <button
-            type="button"
-            class="theme-toggle"
-            onclick="toggleTheme()"
-            aria-label="Toggle dark mode"
+  <body class="site">
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#top" class="nav-logo">
+        <img src="assets/profile.jpeg" alt="Profile image" class="nav-avatar" />
+        <span>Paolo Zanotti</span>
+      </a>
+      <div class="nav-right">
+        <button
+          type="button"
+          class="theme-toggle"
+          onclick="toggleTheme()"
+          aria-label="Toggle dark mode"
+        >
+          <svg
+            class="icon-moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg
+            class="icon-sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="top" class="hero">
+      <div class="hero-inner">
+        <p class="hero-eyebrow">Software Engineer</p>
+        <h1 class="hero-title">
+          <span
+            >Hi there
+            <img
+              src="assets/hi_animation.gif"
+              alt="hand animation"
+              class="hero-hand"
+            />
+          </span>
+          <br />
+          <span style="font-weight: 400">I'm Paolo Zanotti</span>
+        </h1>
+
+        <p class="hero-lead">
+          Based in Rome, Italy. I build custom software solutions for businesses
+          and startups — from concept to production.
+        </p>
+        <div class="socials">
+          <a href="mailto:hello@paolozanotti.dev" aria-label="Email">
+            <svg
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"
+              />
+              <path d="M3 7l9 6l9 -6" />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/zanottipaolo"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
           >
             <svg
-              class="icon-moon"
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="1.6"
+              stroke-width="1.5"
               stroke-linecap="round"
               stroke-linejoin="round"
             >
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-            </svg>
-            <svg
-              class="icon-sun"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <circle cx="12" cy="12" r="4" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path
-                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
               />
             </svg>
-          </button>
-          <button
-            type="button"
-            class="nav-toggle"
-            onclick="toggleMenu()"
-            aria-label="Toggle menu"
-            aria-expanded="false"
+          </a>
+          <a
+            href="https://www.linkedin.com/in/paolo-zanotti"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
           >
             <svg
-              class="icon-bars"
+              class="social-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="1.6"
+              stroke-width="1.5"
               stroke-linecap="round"
+              stroke-linejoin="round"
             >
-              <path d="M3 6h18M3 12h18M3 18h18" />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 11v5" />
+              <path d="M8 8v.01" />
+              <path d="M12 16v-5" />
+              <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+              <path
+                d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"
+              />
             </svg>
-            <svg
-              class="icon-close"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.6"
-              stroke-linecap="round"
-            >
-              <path d="M6 6l12 12M18 6L6 18" />
-            </svg>
-          </button>
+          </a>
         </div>
-      </nav>
+      </div>
+    </section>
 
-      <!-- Hero -->
-      <section id="top" class="hero">
-        <div class="hero-inner">
-          <p class="hero-eyebrow">Software Engineer</p>
-          <h1 class="hero-title">Paolo Zanotti</h1>
-          <p class="hero-lead">
-            Based in Rome, Italy. I build custom software solutions for
-            businesses and startups — from concept to production.
-          </p>
-          <div class="socials">
-            <a href="mailto:hello@paolozanotti.dev" aria-label="Email">
-              <svg
-                class="social-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"
-                />
-                <path d="M3 7l9 6l9 -6" />
-              </svg>
-            </a>
-            <a
-              href="https://github.com/zanottipaolo"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <svg
-                class="social-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/paolo-zanotti"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <svg
-                class="social-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M8 11v5" />
-                <path d="M8 8v.01" />
-                <path d="M12 16v-5" />
-                <path d="M16 16v-3a2 2 0 1 0 -4 0" />
-                <path
-                  d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4l0 -10"
-                />
-              </svg>
-            </a>
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="eyebrow">01 — About</p>
+        <p class="lead">
+          Originally from Bergamo, now based in Rome. I write code, play CTF
+          challenges, and read books.
+        </p>
+        <p class="body-text">
+          I'm passionate about computer science, renewable energy, and
+          biomedical engineering. I love exploring the intersections of
+          technology and different engineering disciplines — always looking for
+          something new to learn and build.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <p class="eyebrow">02 — Experience</p>
+
+        <div class="xp">
+          <div class="xp-date-col">
+            <p class="xp-date">2023 — Present</p>
+          </div>
+          <div class="xp-body">
+            <h3 class="xp-title">Freelance Software Engineer</h3>
+            <p class="xp-org">Self-employed</p>
+            <p class="xp-desc">
+              Custom software development, MVP builds, and technical consulting
+              for startups and businesses. IT strategy advisory and digital
+              transformation support.
+            </p>
           </div>
         </div>
-      </section>
 
-      <!-- About -->
-      <section id="about" class="section">
-        <div class="container">
-          <p class="eyebrow">01 — About</p>
-          <p class="lead">
-            Originally from Bergamo, now based in Rome. I write code, play CTF
-            challenges, and read books.
-          </p>
-          <p class="body-text">
-            I'm passionate about computer science, renewable energy, and
-            biomedical engineering. I love exploring the intersections of
-            technology and different engineering disciplines — always looking
-            for something new to learn and build.
-          </p>
+        <div class="xp">
+          <div class="xp-date-col">
+            <p class="xp-date">2021 — 2023</p>
+          </div>
+          <div class="xp-body">
+            <h3 class="xp-title">Web Developer</h3>
+            <p class="xp-org">Officine Digitali Italiane</p>
+            <p class="xp-desc">
+              Frontend and backend development for client projects. Built custom
+              web applications, WordPress and Shopify sites using modern
+              frameworks and tools.
+            </p>
+          </div>
         </div>
-      </section>
 
-      <!-- Experience -->
-      <section id="experience" class="section">
-        <div class="container">
-          <p class="eyebrow">02 — Experience</p>
+        <div class="xp">
+          <div class="xp-date-col">
+            <p class="xp-date">2019 — 2023</p>
+          </div>
+          <div class="xp-body">
+            <h3 class="xp-title">B.Sc. Computer Science</h3>
+            <p class="xp-org">Università degli Studi di Bergamo</p>
+            <p class="xp-desc">
+              Thesis: Automatic filtering of clinical text — a comparative
+              analysis of structure-based, ontology-based, and LLM-based
+              approaches.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="xp">
-            <div class="xp-date-col">
-              <p class="xp-date">2023 — Present</p>
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow">03 — Projects</p>
+
+        <div class="projects-grid">
+          <a
+            href="https://paolozanotti.dev/projects/bsc-thesis"
+            target="_blank"
+            rel="noopener"
+            class="project-card"
+          >
+            <h3 class="project-title">B.Sc. Thesis</h3>
+            <p class="project-desc">
+              Automatic filtering of clinical text using structure-based,
+              ontology-based, and LLM-based approaches.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">PyTorch</span>
+              <span class="tag">AI</span>
             </div>
-            <div class="xp-body">
-              <h3 class="xp-title">Freelance Software Engineer</h3>
-              <p class="xp-org">Self-employed</p>
-              <p class="xp-desc">
-                Custom software development, MVP builds, and technical
-                consulting for startups and businesses. IT strategy advisory and
-                digital transformation support.
-              </p>
-            </div>
-          </div>
+          </a>
 
-          <div class="xp">
-            <div class="xp-date-col">
-              <p class="xp-date">2021 — 2023</p>
+          <a
+            href="https://golazometrics.com"
+            target="_blank"
+            rel="noopener"
+            class="project-card"
+          >
+            <h3 class="project-title">Golazo</h3>
+            <p class="project-desc">
+              Data analysis platform for amateur and junior football — advanced
+              stats, economics insights, and social media tips.
+            </p>
+            <div class="tags">
+              <span class="tag">AI</span>
+              <span class="tag">Astro</span>
             </div>
-            <div class="xp-body">
-              <h3 class="xp-title">Web Developer</h3>
-              <p class="xp-org">Officine Digitali Italiane</p>
-              <p class="xp-desc">
-                Frontend and backend development for client projects. Built
-                custom web applications, WordPress and Shopify sites using
-                modern frameworks and tools.
-              </p>
-            </div>
-          </div>
+          </a>
 
-          <div class="xp">
-            <div class="xp-date-col">
-              <p class="xp-date">2019 — 2023</p>
+          <a
+            href="https://taylearn-landing.pages.dev/"
+            target="_blank"
+            rel="noopener"
+            class="project-card"
+          >
+            <h3 class="project-title">Taylearn</h3>
+            <p class="project-desc">
+              Virtual language assistant for learning languages in an
+              innovative, AI-driven way.
+            </p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Fastify</span>
+              <span class="tag">Astro</span>
             </div>
-            <div class="xp-body">
-              <h3 class="xp-title">B.Sc. Computer Science</h3>
-              <p class="xp-org">Università degli Studi di Bergamo</p>
-              <p class="xp-desc">
-                Thesis: Automatic filtering of clinical text — a comparative
-                analysis of structure-based, ontology-based, and LLM-based
-                approaches.
-              </p>
+          </a>
+
+          <a
+            href="https://paolozanotti.dev"
+            target="_blank"
+            rel="noopener"
+            class="project-card"
+          >
+            <h3 class="project-title">paolozanotti.dev</h3>
+            <p class="project-desc">
+              Personal portfolio and blog built from scratch, featuring project
+              showcases and technical writing.
+            </p>
+            <div class="tags">
+              <span class="tag">Astro</span>
+              <span class="tag">TypeScript</span>
             </div>
-          </div>
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Projects -->
-      <section id="projects" class="section">
-        <div class="container">
-          <p class="eyebrow">03 — Projects</p>
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="eyebrow">04 — Skills</p>
 
-          <div class="projects-grid">
-            <a
-              href="https://paolozanotti.dev/projects/bsc-thesis"
-              target="_blank"
-              rel="noopener"
-              class="project-card"
-            >
-              <h3 class="project-title">B.Sc. Thesis</h3>
-              <p class="project-desc">
-                Automatic filtering of clinical text using structure-based,
-                ontology-based, and LLM-based approaches.
-              </p>
-              <div class="tags">
-                <span class="tag">Python</span>
-                <span class="tag">PyTorch</span>
-                <span class="tag">AI</span>
-              </div>
-            </a>
-
-            <a
-              href="https://golazometrics.com"
-              target="_blank"
-              rel="noopener"
-              class="project-card"
-            >
-              <h3 class="project-title">Golazo</h3>
-              <p class="project-desc">
-                Data analysis platform for amateur and junior football —
-                advanced stats, economics insights, and social media tips.
-              </p>
-              <div class="tags">
-                <span class="tag">AI</span>
-                <span class="tag">Astro</span>
-              </div>
-            </a>
-
-            <a
-              href="https://taylearn-landing.pages.dev/"
-              target="_blank"
-              rel="noopener"
-              class="project-card"
-            >
-              <h3 class="project-title">Taylearn</h3>
-              <p class="project-desc">
-                Virtual language assistant for learning languages in an
-                innovative, AI-driven way.
-              </p>
-              <div class="tags">
-                <span class="tag">React</span>
-                <span class="tag">Fastify</span>
-                <span class="tag">Astro</span>
-              </div>
-            </a>
-
-            <a
-              href="https://paolozanotti.dev"
-              target="_blank"
-              rel="noopener"
-              class="project-card"
-            >
-              <h3 class="project-title">paolozanotti.dev</h3>
-              <p class="project-desc">
-                Personal portfolio and blog built from scratch, featuring
-                project showcases and technical writing.
-              </p>
-              <div class="tags">
-                <span class="tag">Astro</span>
-                <span class="tag">TypeScript</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="skills" class="section">
-        <div class="container">
-          <p class="eyebrow">04 — Skills</p>
-
-          <div class="skills-grid">
-            <p class="skill-label">Languages</p>
-            <p class="skill-list">
-              JavaScript · TypeScript · Python · HTML · CSS
-            </p>
-
-            <p class="skill-label">Frameworks</p>
-            <p class="skill-list">
-              React · Astro · Fastify · Angular · Next.js · Bootstrap
-            </p>
-
-            <p class="skill-label">Tools</p>
-            <p class="skill-list">
-              Git · Docker · Jira · Trello · WordPress · Shopify · Vercel
-            </p>
-
-            <p class="skill-label">AI / Data</p>
-            <p class="skill-list">PyTorch · Tesseract · LLMs · Pandas</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials -->
-      <section id="testimonials" class="section">
-        <div class="container">
-          <p class="eyebrow">05 — Testimonials</p>
-
-          <div class="quote-block">
-            <p class="quote">
-              "Paolo è una persona responsabile, capace e corretta. Come
-              sviluppatore lavora bene in team e ha ottime doti di problem
-              solving. Riesce inoltre ad approcciare nuove tecnologie con
-              facilità."
-            </p>
-            <p class="quote-author">
-              <strong>Claudio Suardi</strong> · CTO, Officine Digitali Italiane
-            </p>
-          </div>
-
-          <div class="quote-block">
-            <p class="quote">
-              "Si è dimostrato molto capace in web design. Quello che ho
-              apprezzato particolarmente è la sua disponibilità e
-              collaborazione. Il risultato è esattamente quello che volevo."
-            </p>
-            <p class="quote-author">
-              <strong>Camilla Mazzoleni</strong> · Client
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="section">
-        <div class="container">
-          <p class="eyebrow">06 — Contact</p>
-          <p class="contact-headline">Let's work together.</p>
-          <p class="contact-text">
-            Have a project in mind or just want to say hello? I'd love to hear
-            from you.
+        <div class="skills-grid">
+          <p class="skill-label">Languages</p>
+          <p class="skill-list">
+            JavaScript · TypeScript · Python · HTML · CSS
           </p>
 
-          <div class="contact-links">
-            <a href="mailto:hello@paolozanotti.dev" class="contact-link"
-              ><span>hello@paolozanotti.dev</span> →</a
-            >
-            <a
-              href="https://github.com/zanottipaolo"
-              target="_blank"
-              rel="noopener"
-              class="contact-link"
-              >github.com/zanottipaolo →</a
-            >
-            <a
-              href="https://linkedin.com/in/paolo-zanotti"
-              target="_blank"
-              rel="noopener"
-              class="contact-link"
-              >linkedin.com/in/paolo-zanotti →</a
-            >
-            <a
-              href="https://hackerrank.com/zanottipaolo"
-              target="_blank"
-              rel="noopener"
-              class="contact-link"
-              >hackerrank.com/zanottipaolo →</a
-            >
-          </div>
-        </div>
-      </section>
+          <p class="skill-label">Frameworks</p>
+          <p class="skill-list">
+            React · Astro · Fastify · Angular · Next.js · Bootstrap
+          </p>
 
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="footer-inner">
-          <p class="footer-copy">© 2026 Paolo Zanotti</p>
-          <p class="footer-vat">P.IVA 04646520165</p>
+          <p class="skill-label">Tools</p>
+          <p class="skill-list">
+            Git · Docker · Jira · Trello · WordPress · Shopify · Vercel
+          </p>
+
+          <p class="skill-label">AI / Data</p>
+          <p class="skill-list">PyTorch · Tesseract · LLMs · Pandas</p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <p class="eyebrow">05 — Testimonials</p>
+
+        <div class="quote-block">
+          <p class="quote">
+            "Paolo è una persona responsabile, capace e corretta. Come
+            sviluppatore lavora bene in team e ha ottime doti di problem
+            solving. Riesce inoltre ad approcciare nuove tecnologie con
+            facilità."
+          </p>
+          <p class="quote-author">
+            <strong>Claudio Suardi</strong> · CTO, Officine Digitali Italiane
+          </p>
+        </div>
+
+        <div class="quote-block">
+          <p class="quote">
+            "Si è dimostrato molto capace in web design. Quello che ho
+            apprezzato particolarmente è la sua disponibilità e collaborazione.
+            Il risultato è esattamente quello che volevo."
+          </p>
+          <p class="quote-author">
+            <strong>Camilla Mazzoleni</strong> · Client
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <p class="eyebrow">06 — Contact</p>
+        <p class="contact-headline">Let's work together.</p>
+        <p class="contact-text">
+          Have a project in mind or just want to say hello? I'd love to hear
+          from you.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:hello@paolozanotti.dev" class="contact-link"
+            ><span>hello@paolozanotti.dev</span> →</a
+          >
+          <a
+            href="https://github.com/zanottipaolo"
+            target="_blank"
+            rel="noopener"
+            class="contact-link"
+            >github.com/zanottipaolo →</a
+          >
+          <a
+            href="https://linkedin.com/in/paolo-zanotti"
+            target="_blank"
+            rel="noopener"
+            class="contact-link"
+            >linkedin.com/in/paolo-zanotti →</a
+          >
+          <a
+            href="https://hackerrank.com/zanottipaolo"
+            target="_blank"
+            rel="noopener"
+            class="contact-link"
+            >hackerrank.com/zanottipaolo →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 Paolo Zanotti</p>
+        <p class="footer-vat">P.IVA 04646520165</p>
+      </div>
+    </footer>
   </body>
   <!-- Made with ❤️ by Paolo Zanotti -->
 </html>
