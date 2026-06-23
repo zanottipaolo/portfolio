@@ -213,14 +213,6 @@ body {
   margin: 0 auto;
   width: 100%;
 }
-.hero-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  color: var(--text-faint);
-  margin: 0 0 1.25rem 0;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
 .hero-title {
   font-size: 4.75rem;
   font-weight: 600;
@@ -308,6 +300,14 @@ body {
   color: var(--text-muted);
   margin: 0;
   line-height: 1.6;
+}
+.xp-link {
+  text-decoration: none;
+  color: var(--text-faint);
+}
+.xp-link:hover {
+  color: var(--text-muted);
+  transition: color 0.2s;
 }
 
 /* Projects */
@@ -409,7 +409,6 @@ body {
   font-size: 1.0625rem;
   color: var(--text-muted);
   margin: 0 0 2.5rem 0;
-  max-width: 27.5rem;
   line-height: 1.6;
 }
 .contact-links {
@@ -447,15 +446,15 @@ body {
   align-items: center;
 }
 .footer-copy {
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--text-faint);
   margin: 0;
 }
 .footer-vat {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--text-subtle);
+  font-size: 0.875rem;
+  color: var(--text-faint);
   margin: 0;
+  letter-spacing: 0.08em;
 }
 
 /* Mobile */
