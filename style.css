@@ -437,7 +437,7 @@ body {
   gap: 1rem;
 }
 .contact-link {
-  font-size: 0.875rem;
+  font-size: 1.0625rem;
   color: var(--text-muted);
   transition: color 0.2s;
   text-decoration: dotted underline;
@@ -477,6 +477,13 @@ body {
 
 /* Mobile */
 @media (max-width: 640px) {
+  html {
+    scroll-snap-type: none;
+  }
+  section {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
   .nav-links {
     position: fixed;
     top: 4.5rem;
