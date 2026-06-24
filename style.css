@@ -296,7 +296,7 @@ body {
   width: 8.75rem;
 }
 .xp-date {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   color: var(--text-faint);
   margin: 0;
   line-height: 1.7;
@@ -312,7 +312,7 @@ body {
   line-height: 1.4;
 }
 .xp-org {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--text-faint);
   margin: 0 0 0.625rem 0;
 }
@@ -384,7 +384,7 @@ body {
   align-items: baseline;
 }
 .skill-label {
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
   color: var(--text-faint);
   margin: 0;
 }
@@ -409,7 +409,7 @@ body {
   font-style: italic;
 }
 .quote-author {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--text-faint);
   margin: 0;
 }
@@ -465,12 +465,12 @@ body {
   align-items: center;
 }
 .footer-copy {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--text-faint);
   margin: 0;
 }
 .footer-vat {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: var(--text-faint);
   margin: 0;
 }
