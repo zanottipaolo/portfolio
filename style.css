@@ -68,21 +68,24 @@ section {
     scroll-behavior: auto;
   }
 }
-body {
-  margin: 0;
-  background: var(--bg);
-}
+
 ::selection {
   background: var(--text);
   color: var(--bg);
 }
 
 .site {
-  background: var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 1.0625rem;
   line-height: 1.7;
+  margin: 0;
+  background-color: var(--bg);
+  background-image: url("./assets/circuit_light.svg");
+}
+
+:root[data-theme="dark"] .site {
+  background-image: url("./assets/circuit_dark.svg");
 }
 
 .container {
