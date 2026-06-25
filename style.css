@@ -480,12 +480,12 @@ body {
 }
 .footer-copy {
   font-size: 0.9375rem;
-  color: var(--text-faint);
+  color: var(--text-soft);
   margin: 0;
 }
 .footer-vat {
   font-size: 0.9375rem;
-  color: var(--text-faint);
+  color: var(--text-soft);
   margin: 0;
 }
 
