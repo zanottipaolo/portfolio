@@ -207,6 +207,15 @@ body {
   display: none;
 }
 
+#experience,
+#projects {
+  scroll-margin-top: 1.5rem;
+}
+
+#testimonials {
+  scroll-margin-top: -2.5rem;
+}
+
 /* Shared section */
 .section {
   padding: 6.25rem 3rem;
@@ -412,6 +421,11 @@ body {
   font-size: 0.9375rem;
   color: var(--text-faint);
   margin: 0;
+  text-decoration: none;
+}
+.quote-author:hover {
+  color: var(--text-muted);
+  transition: color 0.3s;
 }
 .quote-author strong {
   color: var(--text-muted);
@@ -544,5 +558,15 @@ body {
   .skills-grid {
     grid-template-columns: 1fr;
     gap: 0.5rem 0;
+  }
+  .footer {
+    padding: 3rem 1.5rem 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
