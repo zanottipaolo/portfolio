@@ -36,13 +36,12 @@
   --nav-border: rgba(0, 0, 0, 0.06);
   --font-sans: "DM Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
-  /* Type scale */
-  --fs-xs: 0.8125rem; /* 13 — eyebrow, tags, meta */
-  --fs-sm: 0.9375rem; /* 15 — dates, labels, footer, captions */
-  --fs-base: 1.0625rem; /* 17 — body + descriptions */
-  --fs-md: 1.1875rem; /* 19 — card/section titles, leads */
-  --fs-lg: 1.5rem; /* 24 — about lead, contact headline */
-  --fs-hero: clamp(3rem, 8vw, 4.75rem); /* hero title, fluid */
+  --fs-xs: 0.8125rem; /* 13px */
+  --fs-sm: 0.9375rem; /* 15px */
+  --fs-base: 1.0625rem; /* 17px */
+  --fs-md: 1.1875rem; /* 19px */
+  --fs-lg: 1.5rem; /* 24px */
+  --fs-hero: clamp(3rem, 8vw, 4.75rem);
 }
 :root[data-theme="dark"] {
   --bg: #171717;
@@ -286,6 +285,9 @@ section {
   font-weight: 600;
   line-height: 1;
   margin: 0 0 1.75rem 0;
+}
+.hero-title-name {
+  font-weight: 400;
 }
 .hero-lead {
   font-size: var(--fs-md);
