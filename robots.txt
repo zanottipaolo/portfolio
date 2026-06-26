@@ -4,3 +4,4 @@ Disallow: /assets/*.jpg
 Disallow: /assets/*.gif
 Disallow: /assets/*.svg
 Disallow: /assets/*.png
+Disallow: /assets/*.webp
