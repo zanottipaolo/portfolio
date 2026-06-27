@@ -586,6 +586,10 @@ section {
   .nav-toggle {
     display: flex;
   }
+  .theme-toggle:hover {
+    color: var(--text);
+    transform: none;
+  }
   .section,
   .hero {
     padding-left: 1.5rem;
